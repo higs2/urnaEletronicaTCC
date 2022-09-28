@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +18,10 @@ namespace urnaEletronicaTCC
             InitializeComponent();
         }
 
+        
         private void frmUrna_Load(object sender, EventArgs e)
         {
-
+           
         }
     }
 }

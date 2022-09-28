@@ -22,5 +22,11 @@ namespace urnaEletronicaTCC
             frmUrna urna = new frmUrna();
             urna.ShowDialog();
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            frmCadastro cadastro = new frmCadastro();
+            cadastro.ShowDialog();
+        }
     }
 }
