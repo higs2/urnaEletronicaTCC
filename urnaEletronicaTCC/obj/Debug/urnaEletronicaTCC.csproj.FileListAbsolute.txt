@@ -1,0 +1,12 @@
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\bin\Debug\urnaEletronicaTCC.exe.config
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\bin\Debug\urnaEletronicaTCC.exe
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\bin\Debug\urnaEletronicaTCC.pdb
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.csproj.AssemblyReference.cache
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.csproj.SuggestedBindingRedirects.cache
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmUrna.resources
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.Properties.Resources.resources
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.csproj.GenerateResource.cache
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.csproj.CoreCompileInputs.cache
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.exe
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.pdb
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmPrincipal.resources
