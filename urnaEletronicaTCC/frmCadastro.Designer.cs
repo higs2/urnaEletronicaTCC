@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPartido = new System.Windows.Forms.TextBox();
+            this.txtCurso = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -79,17 +79,17 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(48, 212);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 25);
+            this.label2.Size = new System.Drawing.Size(69, 25);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Partido";
+            this.label2.Text = "Curso";
             // 
-            // txtPartido
+            // txtCurso
             // 
-            this.txtPartido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPartido.Location = new System.Drawing.Point(226, 212);
-            this.txtPartido.Name = "txtPartido";
-            this.txtPartido.Size = new System.Drawing.Size(195, 29);
-            this.txtPartido.TabIndex = 3;
+            this.txtCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurso.Location = new System.Drawing.Point(226, 212);
+            this.txtCurso.Name = "txtCurso";
+            this.txtCurso.Size = new System.Drawing.Size(195, 29);
+            this.txtCurso.TabIndex = 3;
             // 
             // label3
             // 
@@ -168,7 +168,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtPartido);
+            this.Controls.Add(this.txtCurso);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNome);
@@ -187,7 +187,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPartido;
+        private System.Windows.Forms.TextBox txtCurso;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label4;
