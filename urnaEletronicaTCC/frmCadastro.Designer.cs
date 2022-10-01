@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPartido = new System.Windows.Forms.TextBox();
+            this.txtCurso = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,6 +40,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pbFoto = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.txtfoto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +73,7 @@
             this.btnCadastrar.TabIndex = 2;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // label2
             // 
@@ -79,17 +81,17 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(48, 212);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 25);
+            this.label2.Size = new System.Drawing.Size(69, 25);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Partido";
+            this.label2.Text = "Curso";
             // 
-            // txtPartido
+            // txtCurso
             // 
-            this.txtPartido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPartido.Location = new System.Drawing.Point(226, 212);
-            this.txtPartido.Name = "txtPartido";
-            this.txtPartido.Size = new System.Drawing.Size(195, 29);
-            this.txtPartido.TabIndex = 3;
+            this.txtCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurso.Location = new System.Drawing.Point(226, 212);
+            this.txtCurso.Name = "txtCurso";
+            this.txtCurso.Size = new System.Drawing.Size(195, 29);
+            this.txtCurso.TabIndex = 3;
             // 
             // label3
             // 
@@ -156,11 +158,20 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // txtfoto
+            // 
+            this.txtfoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfoto.Location = new System.Drawing.Point(484, 257);
+            this.txtfoto.Name = "txtfoto";
+            this.txtfoto.Size = new System.Drawing.Size(121, 29);
+            this.txtfoto.TabIndex = 12;
+            // 
             // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(883, 493);
+            this.Controls.Add(this.txtfoto);
             this.Controls.Add(this.pbFoto);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCancelar);
@@ -168,7 +179,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtPartido);
+            this.Controls.Add(this.txtCurso);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNome);
@@ -187,7 +198,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPartido;
+        private System.Windows.Forms.TextBox txtCurso;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label4;
@@ -195,5 +206,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pbFoto;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox txtfoto;
     }
 }
