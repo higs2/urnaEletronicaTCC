@@ -54,8 +54,8 @@ namespace urnaEletronicaTCC
             Cadastro save = new Cadastro
             (
                 txtNome.Text,
-                txtNumero.Text,
-                Convert.ToInt32 (txtCurso.Text),
+                Convert.ToInt32(txtNumero.Text),
+                txtCurso.Text,
                 txtImage.Text
                 
                 
