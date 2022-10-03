@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29-Set-2022 às 02:34
--- Versão do servidor: 10.4.22-MariaDB
--- versão do PHP: 7.4.27
+-- Tempo de geração: 04-Out-2022 às 01:30
+-- Versão do servidor: 10.4.24-MariaDB
+-- versão do PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,9 +33,20 @@ CREATE TABLE `cadastro` (
   `id_user` int(11) NOT NULL,
   `nome` varchar(50) DEFAULT NULL,
   `numero` int(11) DEFAULT NULL,
-  `partido` varchar(50) DEFAULT NULL,
+  `curso` varchar(50) DEFAULT NULL,
   `foto` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `cadastro`
+--
+
+INSERT INTO `cadastro` (`id_user`, `nome`, `numero`, `curso`, `foto`) VALUES
+(1, 'teste', 1, '1', '1'),
+(2, '2', 2, '2', '22'),
+(3, '1', 3, 'C:\\Users\\higor\\OneDrive\\Imagens\\Capturas de tela\\o', '2'),
+(4, '123', 1, 'C:\\Users\\higor\\OneDrive\\Imagens\\Capturas de tela\\o', '321'),
+(5, '1', 3, 'C:\\Users\\higor\\OneDrive\\Imagens\\Capturas de tela\\o', '2');
 
 --
 -- Índices para tabelas despejadas
@@ -55,7 +66,7 @@ ALTER TABLE `cadastro`
 -- AUTO_INCREMENT de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
