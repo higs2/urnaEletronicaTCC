@@ -53,6 +53,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblNumero = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -258,7 +259,7 @@
             // txt1
             // 
             this.txt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1.Location = new System.Drawing.Point(141, 250);
+            this.txt1.Location = new System.Drawing.Point(138, 220);
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(43, 29);
             this.txt1.TabIndex = 18;
@@ -266,7 +267,7 @@
             // txt2
             // 
             this.txt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt2.Location = new System.Drawing.Point(208, 250);
+            this.txt2.Location = new System.Drawing.Point(205, 220);
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(43, 29);
             this.txt2.TabIndex = 19;
@@ -330,11 +331,23 @@
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
+            // lblNumero
+            // 
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.BackColor = System.Drawing.Color.White;
+            this.lblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Location = new System.Drawing.Point(136, 255);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Padding = new System.Windows.Forms.Padding(60, 5, 60, 5);
+            this.lblNumero.Size = new System.Drawing.Size(120, 35);
+            this.lblNumero.TabIndex = 29;
+            // 
             // frmUrna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 515);
+            this.Controls.Add(this.lblNumero);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -387,5 +400,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblNumero;
     }
 }

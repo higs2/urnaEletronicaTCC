@@ -24,7 +24,8 @@ namespace urnaEletronicaTCC
 
         private void button1_Click(object sender, EventArgs e)
         {
-           /* OpenFileDialog dialog = new OpenFileDialog();
+            OpenFileDialog dialog = new OpenFileDialog();
+            
             dialog.Filter = "JPG Files(*.jpg)| *.jpg | PNG Files(*.png)| *.png | AllFiles(*.*)| *.*";
             if (dialog.ShowDialog() == DialogResult.OK) 
             {
@@ -32,15 +33,8 @@ namespace urnaEletronicaTCC
                 txtImage.Text = foto;
               
 
-            }*/
-            /* 
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                Directory.CreateDirectory(Directory.GetCurrentDirectory());
-                pbFoto.Image = new System.Drawing.Bitmap(dialog.FileName);
-                destino = "imagens" + dialog.SafeFileName ;
-                File.Copy(dialog.FileName, Directory.GetCurrentDirectory() + destino);
-            }*/
+            }
+          
         }
 
         private void frmCadastro_Load(object sender, EventArgs e)
@@ -90,6 +84,14 @@ namespace urnaEletronicaTCC
             }
 
 
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja cancelar o cadastro?","Cancelar",MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

@@ -39,6 +39,9 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.txtImage = new System.Windows.Forms.TextBox();
+            this.btnEscolherFoto = new System.Windows.Forms.Button();
+            this.pbFoto = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNome
@@ -55,9 +58,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(48, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 25);
+            this.label1.Size = new System.Drawing.Size(74, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Nome Candidato";
+            this.label1.Text = "Nome:";
             // 
             // btnCadastrar
             // 
@@ -78,9 +81,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(48, 163);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 25);
+            this.label2.Size = new System.Drawing.Size(75, 25);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Curso";
+            this.label2.Text = "Curso:";
             // 
             // txtCurso
             // 
@@ -129,6 +132,7 @@
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // openFileDialog1
             // 
@@ -136,11 +140,34 @@
             // 
             // txtImage
             // 
+            this.txtImage.Enabled = false;
             this.txtImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImage.Location = new System.Drawing.Point(593, 167);
+            this.txtImage.Location = new System.Drawing.Point(484, 214);
             this.txtImage.Name = "txtImage";
-            this.txtImage.Size = new System.Drawing.Size(195, 29);
+            this.txtImage.Size = new System.Drawing.Size(103, 29);
             this.txtImage.TabIndex = 12;
+            this.txtImage.Visible = false;
+            // 
+            // btnEscolherFoto
+            // 
+            this.btnEscolherFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEscolherFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEscolherFoto.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnEscolherFoto.Location = new System.Drawing.Point(593, 308);
+            this.btnEscolherFoto.Name = "btnEscolherFoto";
+            this.btnEscolherFoto.Size = new System.Drawing.Size(195, 51);
+            this.btnEscolherFoto.TabIndex = 10;
+            this.btnEscolherFoto.Text = "Escolher foto";
+            this.btnEscolherFoto.UseVisualStyleBackColor = false;
+            this.btnEscolherFoto.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pbFoto
+            // 
+            this.pbFoto.Location = new System.Drawing.Point(593, 136);
+            this.pbFoto.Name = "pbFoto";
+            this.pbFoto.Size = new System.Drawing.Size(195, 166);
+            this.pbFoto.TabIndex = 11;
+            this.pbFoto.TabStop = false;
             // 
             // frmCadastro
             // 
@@ -148,6 +175,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(883, 493);
             this.Controls.Add(this.txtImage);
+            this.Controls.Add(this.pbFoto);
+            this.Controls.Add(this.btnEscolherFoto);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -157,9 +186,12 @@
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNome);
+            this.MaximizeBox = false;
             this.Name = "frmCadastro";
-            this.Text = "frmCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro";
             this.Load += new System.EventHandler(this.frmCadastro_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +210,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox txtImage;
+        private System.Windows.Forms.Button btnEscolherFoto;
+        private System.Windows.Forms.PictureBox pbFoto;
     }
 }
