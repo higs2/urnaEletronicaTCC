@@ -31,7 +31,7 @@ namespace urnaEletronicaTCC
             {
                 string foto = dialog.FileName.ToString();
                 txtImage.Text = foto;
-              
+                pbFoto.ImageLocation = foto;
 
             }
           
