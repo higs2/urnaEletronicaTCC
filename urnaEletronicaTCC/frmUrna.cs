@@ -17,11 +17,43 @@ namespace urnaEletronicaTCC
         {
             InitializeComponent();
         }
-
+        private string numeroCandidato;
         
         private void frmUrna_Load(object sender, EventArgs e)
         {
            
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            if (txt1.Text == "")
+            {
+                txt1.Text = "1";
+            }
+            else
+            {
+                txt2.Text = "1";
+            }               
+  
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            if (txt1.Text == "")
+            {
+                txt1.Text = "2";
+            }
+            else
+            {
+                txt2.Text = "2";
+            }
+        }
+
+        private void btnCorrigir_Click(object sender, EventArgs e)
+        {
+            txt1.Clear();
+            txt2.Clear();
+
         }
     }
 }

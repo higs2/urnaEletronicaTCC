@@ -47,15 +47,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt1 = new System.Windows.Forms.TextBox();
             this.txt2 = new System.Windows.Forms.TextBox();
-            this.txt3 = new System.Windows.Forms.TextBox();
-            this.txt5 = new System.Windows.Forms.TextBox();
-            this.txt4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn7
@@ -127,6 +126,7 @@
             this.btn2.TabIndex = 7;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn5
             // 
@@ -157,6 +157,7 @@
             this.btn1.TabIndex = 6;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // groupBox1
             // 
@@ -192,6 +193,7 @@
             this.btnCorrigir.TabIndex = 14;
             this.btnCorrigir.Text = "Corrigir";
             this.btnCorrigir.UseVisualStyleBackColor = false;
+            this.btnCorrigir.Click += new System.EventHandler(this.btnCorrigir_Click);
             // 
             // btnConfirma
             // 
@@ -239,7 +241,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(133, 183);
+            this.label3.Location = new System.Drawing.Point(136, 183);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 29);
             this.label3.TabIndex = 17;
@@ -248,7 +250,7 @@
             // txt1
             // 
             this.txt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1.Location = new System.Drawing.Point(138, 250);
+            this.txt1.Location = new System.Drawing.Point(141, 250);
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(43, 29);
             this.txt1.TabIndex = 18;
@@ -256,40 +258,16 @@
             // txt2
             // 
             this.txt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt2.Location = new System.Drawing.Point(205, 250);
+            this.txt2.Location = new System.Drawing.Point(208, 250);
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(43, 29);
             this.txt2.TabIndex = 19;
-            // 
-            // txt3
-            // 
-            this.txt3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt3.Location = new System.Drawing.Point(272, 250);
-            this.txt3.Name = "txt3";
-            this.txt3.Size = new System.Drawing.Size(43, 29);
-            this.txt3.TabIndex = 20;
-            // 
-            // txt5
-            // 
-            this.txt5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt5.Location = new System.Drawing.Point(397, 250);
-            this.txt5.Name = "txt5";
-            this.txt5.Size = new System.Drawing.Size(43, 29);
-            this.txt5.TabIndex = 22;
-            // 
-            // txt4
-            // 
-            this.txt4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt4.Location = new System.Drawing.Point(339, 250);
-            this.txt4.Name = "txt4";
-            this.txt4.Size = new System.Drawing.Size(43, 29);
-            this.txt4.TabIndex = 21;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(38, 259);
+            this.label4.Location = new System.Drawing.Point(41, 259);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 23;
@@ -299,7 +277,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(38, 320);
+            this.label5.Location = new System.Drawing.Point(41, 320);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 20);
             this.label5.TabIndex = 24;
@@ -309,17 +287,17 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(38, 372);
+            this.label6.Location = new System.Drawing.Point(41, 372);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 20);
+            this.label6.Size = new System.Drawing.Size(55, 20);
             this.label6.TabIndex = 25;
-            this.label6.Text = "Partido:";
+            this.label6.Text = "Curso:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(134, 320);
+            this.label7.Location = new System.Drawing.Point(137, 320);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 20);
             this.label7.TabIndex = 26;
@@ -329,25 +307,32 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(134, 372);
+            this.label8.Location = new System.Drawing.Point(137, 372);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 20);
             this.label8.TabIndex = 27;
             this.label8.Text = "Teste";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(286, 204);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(244, 214);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
             // 
             // frmUrna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 515);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txt5);
-            this.Controls.Add(this.txt4);
-            this.Controls.Add(this.txt3);
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.txt1);
             this.Controls.Add(this.label3);
@@ -361,6 +346,7 @@
             this.Text = "Urna Eletrônica";
             this.Load += new System.EventHandler(this.frmUrna_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,13 +373,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.TextBox txt2;
-        private System.Windows.Forms.TextBox txt3;
-        private System.Windows.Forms.TextBox txt5;
-        private System.Windows.Forms.TextBox txt4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
