@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,7 @@ namespace urnaEletronicaTCC
 {
     public partial class frmCadastro : Form
     {
-       
+        private string destino;
         public frmCadastro()
         {
             InitializeComponent();
@@ -23,11 +24,23 @@ namespace urnaEletronicaTCC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK) 
+           /* OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "JPG Files(*.jpg)| *.jpg | PNG Files(*.png)| *.png | AllFiles(*.*)| *.*";
+            if (dialog.ShowDialog() == DialogResult.OK) 
             {
-                pbFoto.ImageLocation = openFileDialog1.FileName;
-                pbFoto.Load();
-            }
+                string foto = dialog.FileName.ToString();
+                txtImage.Text = foto;
+              
+
+            }*/
+            /* 
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory());
+                pbFoto.Image = new System.Drawing.Bitmap(dialog.FileName);
+                destino = "imagens" + dialog.SafeFileName ;
+                File.Copy(dialog.FileName, Directory.GetCurrentDirectory() + destino);
+            }*/
         }
 
         private void frmCadastro_Load(object sender, EventArgs e)
@@ -37,7 +50,7 @@ namespace urnaEletronicaTCC
 
         public void limparCampos()
         {
-            txtfoto.Clear();
+            
             txtNumero.Clear();
             
             txtCurso.Clear();
@@ -49,7 +62,8 @@ namespace urnaEletronicaTCC
                 txtNome.Text,
                 txtNumero.Text,
                 Convert.ToInt32 (txtCurso.Text),
-                txtfoto.Text                
+                txtImage.Text
+                
                 
             );
             

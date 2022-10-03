@@ -21,13 +21,14 @@ namespace urnaEletronicaTCC.Models
             string _nome,
             string _foto,
             int _numero,
-            string _partido
+            string _curso
+
             )
         {
             nome = _nome;
             foto = _foto;
             numero = _numero;
-            curso = _partido;
+            curso = _curso;
 
         }
 
