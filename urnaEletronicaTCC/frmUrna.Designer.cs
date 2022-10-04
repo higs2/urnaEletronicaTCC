@@ -289,9 +289,9 @@
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.Location = new System.Drawing.Point(137, 320);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(45, 20);
+            this.lblNome.Size = new System.Drawing.Size(54, 20);
             this.lblNome.TabIndex = 26;
-            this.lblNome.Text = "teste";
+            this.lblNome.Text = "teste2";
             // 
             // lblCurso
             // 
