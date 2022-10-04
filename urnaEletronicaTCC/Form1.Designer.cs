@@ -32,7 +32,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvCandidato = new System.Windows.Forms.DataGridView();
             this.btnZerarCandidatos = new System.Windows.Forms.Button();
             this.btnZerarVotacao = new System.Windows.Forms.Button();
             this.btnApuracao = new System.Windows.Forms.Button();
@@ -41,7 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCandidato)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -70,14 +70,14 @@
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // dataGridView1
+            // dgvCandidato
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 156);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(595, 255);
-            this.dataGridView1.TabIndex = 14;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvCandidato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCandidato.Location = new System.Drawing.Point(12, 156);
+            this.dgvCandidato.Name = "dgvCandidato";
+            this.dgvCandidato.Size = new System.Drawing.Size(595, 255);
+            this.dgvCandidato.TabIndex = 14;
+            this.dgvCandidato.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnZerarCandidatos
             // 
@@ -131,11 +131,12 @@
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 111);
+            this.label1.Location = new System.Drawing.Point(12, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 31);
+            this.label1.Size = new System.Drawing.Size(162, 31);
             this.label1.TabIndex = 17;
-            this.label1.Text = "VOTAÇÃO";
+            this.label1.Text = "Candidatos";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmPrincipal
             // 
@@ -144,7 +145,7 @@
             this.ClientSize = new System.Drawing.Size(755, 450);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvCandidato);
             this.Controls.Add(this.btnZerarCandidatos);
             this.Controls.Add(this.btnZerarVotacao);
             this.Controls.Add(this.btnApuracao);
@@ -161,7 +162,7 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCandidato)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,7 +173,7 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvCandidato;
         private System.Windows.Forms.Button btnZerarCandidatos;
         private System.Windows.Forms.Button btnZerarVotacao;
         private System.Windows.Forms.Button btnApuracao;

@@ -49,8 +49,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblCurso = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
@@ -230,7 +230,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(136, 183);
+            this.label3.Location = new System.Drawing.Point(72, 200);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 29);
             this.label3.TabIndex = 17;
@@ -283,32 +283,32 @@
             this.label6.TabIndex = 25;
             this.label6.Text = "Curso:";
             // 
-            // label7
+            // lblNome
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(137, 320);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 20);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "teste";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(137, 320);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(45, 20);
+            this.lblNome.TabIndex = 26;
+            this.lblNome.Text = "teste";
             // 
-            // label8
+            // lblCurso
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(137, 372);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 20);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Teste";
+            this.lblCurso.AutoSize = true;
+            this.lblCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurso.Location = new System.Drawing.Point(137, 372);
+            this.lblCurso.Name = "lblCurso";
+            this.lblCurso.Size = new System.Drawing.Size(49, 20);
+            this.lblCurso.TabIndex = 27;
+            this.lblCurso.Text = "Teste";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::urnaEletronicaTCC.Properties.Resources.Logo_Mercurio_Eleitoral1;
-            this.pictureBox2.Location = new System.Drawing.Point(610, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(179, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(315, 141);
+            this.pictureBox2.Size = new System.Drawing.Size(527, 144);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 29;
             this.pictureBox2.TabStop = false;
@@ -329,8 +329,8 @@
             this.ClientSize = new System.Drawing.Size(954, 515);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblCurso);
+            this.Controls.Add(this.lblNome);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -375,8 +375,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblCurso;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
