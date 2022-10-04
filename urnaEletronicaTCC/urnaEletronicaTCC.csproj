@@ -148,5 +148,11 @@
   <ItemGroup>
     <None Include="Resources\tendencias-de-ti-que-voce-deve-ficar-de-olho.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Mercurio Eleitoral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Mercurio Eleitoral1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
