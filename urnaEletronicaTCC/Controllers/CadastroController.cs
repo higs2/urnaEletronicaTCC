@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,6 +46,29 @@ namespace urnaEletronicaTCC.Controllers
                 conexao.Close();
             }
 
+        }
+        public DataTable exibirCandidatos()
+        {
+            DataTable dt = new DataTable();
+
+            try
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("SELECT nome,numero,curso,foto FROM cadastro", conexao);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                dt.Load(reader);
+                return dt;
+
+            }
+            catch (Exception)
+            {
+
+                return dt;
+            }
+            finally 
+            { 
+                conexao.Close(); 
+            }
         }
     }
 }

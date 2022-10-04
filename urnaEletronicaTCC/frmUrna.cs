@@ -17,7 +17,6 @@ namespace urnaEletronicaTCC
         {
             InitializeComponent();
         }
-        private string numeroCandidato;
 
         private void frmUrna_Load(object sender, EventArgs e)
         {
@@ -31,12 +30,12 @@ namespace urnaEletronicaTCC
             if (txt1.Text == "")
             {
                 txt1.Text = "1";
-                lblNumero.Text = "1";
+                
             }
             else
             {
                 txt2.Text = "1";
-                lblNumero.Text="1";
+                
     
             }
   
@@ -47,12 +46,12 @@ namespace urnaEletronicaTCC
             if (txt1.Text == "")
             {
                 txt1.Text = "2";
-                lblNumero.Text = "2";
+               
             }
             else
             {
                 txt2.Text = "2";
-                lblNumero.Text = "2";
+                
         
             }
         }
@@ -61,7 +60,7 @@ namespace urnaEletronicaTCC
         {
             txt1.Clear();
             txt2.Clear();
-            lblNumero.Text = "";
+            
 
         }
 
@@ -71,7 +70,7 @@ namespace urnaEletronicaTCC
             if (txt1.Text == "")
             {
                 txt1.Text = "3";
-                lblNumero.Text = "3";
+               
             }
             else
             {
@@ -162,6 +161,11 @@ namespace urnaEletronicaTCC
             {
                 txt2.Text = "0";
             }
+        }
+
+        private void txt2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
