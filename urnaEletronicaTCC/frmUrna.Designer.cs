@@ -306,9 +306,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::urnaEletronicaTCC.Properties.Resources.Logo_Mercurio_Eleitoral1;
-            this.pictureBox2.Location = new System.Drawing.Point(235, -2);
+            this.pictureBox2.Location = new System.Drawing.Point(610, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(420, 200);
+            this.pictureBox2.Size = new System.Drawing.Size(315, 141);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 29;
             this.pictureBox2.TabStop = false;
             // 

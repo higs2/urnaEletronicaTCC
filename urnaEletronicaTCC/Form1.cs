@@ -28,5 +28,15 @@ namespace urnaEletronicaTCC
             frmCadastro cadastro = new frmCadastro();
             cadastro.ShowDialog();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+             
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
