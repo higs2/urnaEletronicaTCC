@@ -16,7 +16,7 @@ namespace urnaEletronicaTCC
 {
     public partial class frmCadastro : Form
     {
-        private string destino;
+     
         public frmCadastro()
         {
             InitializeComponent();
@@ -72,6 +72,7 @@ namespace urnaEletronicaTCC
                 if (MessageBox.Show("Deseja Continuar cadastrando", "Cadastro", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     limparCampos();
+
                 }
                 else
                 {

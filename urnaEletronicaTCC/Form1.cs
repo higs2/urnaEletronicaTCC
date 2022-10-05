@@ -51,10 +51,10 @@ namespace urnaEletronicaTCC
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
             dgvCandidato.DataSource = cadastroController.exibirCandidatos();
-            dgvCandidato.Columns[0].Width = 50;
-            dgvCandidato.Columns[1].Width = 100;
-            dgvCandidato.Columns[2].Width = 200;
-            dgvCandidato.Columns[3].Width = 120;
+            dgvCandidato.Columns[0].Width = 20;
+            dgvCandidato.Columns[1].Width = 80;
+            dgvCandidato.Columns[2].Width = 80;
+            dgvCandidato.Columns[3].Width = 80;
             
 
 
@@ -62,7 +62,7 @@ namespace urnaEletronicaTCC
             dgvCandidato.Columns[1].HeaderText = "Nome";
             dgvCandidato.Columns[2].HeaderText = "Numero";
             dgvCandidato.Columns[3].HeaderText = "Curso";
-            
+
             
         }
 

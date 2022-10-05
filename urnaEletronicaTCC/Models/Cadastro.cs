@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace urnaEletronicaTCC.Models
 {
-    internal class Cadastro
+    public class Cadastro
     {
         public int id_user { get; set; }
         public string nome { get; set; }

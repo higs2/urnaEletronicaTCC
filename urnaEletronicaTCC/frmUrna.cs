@@ -5,9 +5,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using urnaEletronicaTCC.Controllers;
+using urnaEletronicaTCC.Models;
 
 namespace urnaEletronicaTCC
 {
@@ -17,12 +20,15 @@ namespace urnaEletronicaTCC
         {
             InitializeComponent();
         }
+        MySqlConnection conexao = new MySqlConnection();
+
 
         private void frmUrna_Load(object sender, EventArgs e)
         {
-
+           
         }
         
+       
     
 
         private void btn1_Click(object sender, EventArgs e)
@@ -35,7 +41,7 @@ namespace urnaEletronicaTCC
             else
             {
                 txt2.Text = "1";
-                
+               
     
             }
   
@@ -50,9 +56,11 @@ namespace urnaEletronicaTCC
             }
             else
             {
-                txt2.Text = "2";
+                txt2.Text = "2";            
+
                 
-        
+             
+              
             }
         }
 
