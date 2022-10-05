@@ -53,6 +53,7 @@
             this.lblCurso = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbFoto = new System.Windows.Forms.PictureBox();
+            this.lblNumero = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
@@ -230,7 +231,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(72, 200);
+            this.label3.Location = new System.Drawing.Point(40, 200);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 29);
             this.label3.TabIndex = 17;
@@ -239,7 +240,7 @@
             // txt1
             // 
             this.txt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1.Location = new System.Drawing.Point(130, 253);
+            this.txt1.Location = new System.Drawing.Point(190, 200);
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(43, 29);
             this.txt1.TabIndex = 18;
@@ -247,7 +248,7 @@
             // txt2
             // 
             this.txt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt2.Location = new System.Drawing.Point(179, 253);
+            this.txt2.Location = new System.Drawing.Point(239, 200);
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(43, 29);
             this.txt2.TabIndex = 19;
@@ -315,18 +316,30 @@
             // 
             // pbFoto
             // 
-            this.pbFoto.Location = new System.Drawing.Point(286, 204);
+            this.pbFoto.Location = new System.Drawing.Point(309, 200);
             this.pbFoto.Name = "pbFoto";
             this.pbFoto.Size = new System.Drawing.Size(244, 214);
             this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFoto.TabIndex = 28;
             this.pbFoto.TabStop = false;
             // 
+            // lblNumero
+            // 
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.BackColor = System.Drawing.Color.White;
+            this.lblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Location = new System.Drawing.Point(116, 249);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Padding = new System.Windows.Forms.Padding(50, 10, 50, 10);
+            this.lblNumero.Size = new System.Drawing.Size(100, 40);
+            this.lblNumero.TabIndex = 30;
+            // 
             // frmUrna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 515);
+            this.Controls.Add(this.lblNumero);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pbFoto);
             this.Controls.Add(this.lblCurso);
@@ -379,5 +392,6 @@
         private System.Windows.Forms.Label lblCurso;
         private System.Windows.Forms.PictureBox pbFoto;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblNumero;
     }
 }

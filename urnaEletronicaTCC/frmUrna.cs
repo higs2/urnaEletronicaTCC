@@ -41,10 +41,20 @@ namespace urnaEletronicaTCC
             else
             {
                 txt2.Text = "1";
+                
                
     
             }
-  
+            string num = lblNumero.Text;
+            if (num.Length >= 0)
+            {
+                lblNumero.Text = lblNumero.Text +  "1";
+                
+           
+            }
+
+
+          
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -56,11 +66,15 @@ namespace urnaEletronicaTCC
             }
             else
             {
-                txt2.Text = "2";            
+                txt2.Text = "2";          
 
-                
-             
-              
+            }
+
+            string num = lblNumero.Text;
+            if (num.Length >= 0)
+            {
+                lblNumero.Text = lblNumero.Text + "2";
+
             }
         }
 
@@ -84,7 +98,14 @@ namespace urnaEletronicaTCC
             {
                 txt2.Text = "3";
               
-            } 
+            }
+
+            string num = lblNumero.Text;
+            if (num.Length >= 0)
+            {
+                lblNumero.Text = lblNumero.Text + "3";
+
+            }
         }
 
         private void btn4_Click(object sender, EventArgs e)
@@ -96,6 +117,13 @@ namespace urnaEletronicaTCC
             else
             {
                 txt2.Text = "4";
+            }
+
+            string num = lblNumero.Text;
+            if (num.Length >= 0)
+            {
+                lblNumero.Text = lblNumero.Text + "4";
+
             }
         }
 
@@ -109,6 +137,13 @@ namespace urnaEletronicaTCC
             {
                 txt2.Text = "5";
             }
+
+            string num = lblNumero.Text;
+            if (num.Length >= 0)
+            {
+                lblNumero.Text = lblNumero.Text + "5";
+
+            }
         }
 
         private void btn6_Click(object sender, EventArgs e)
@@ -120,6 +155,13 @@ namespace urnaEletronicaTCC
             else
             {
                 txt2.Text = "6";
+            }
+
+            string num = lblNumero.Text;
+            if (num.Length >= 0)
+            {
+                lblNumero.Text = lblNumero.Text + "6";
+
             }
         }
 
@@ -133,6 +175,13 @@ namespace urnaEletronicaTCC
             {
                 txt2.Text = "7";
             }
+
+            string num = lblNumero.Text;
+            if (num.Length >= 0)
+            {
+                lblNumero.Text = lblNumero.Text + "7";
+
+            }
         }
 
         private void btn8_Click(object sender, EventArgs e)
@@ -144,6 +193,13 @@ namespace urnaEletronicaTCC
             else
             {
                 txt2.Text = "8";
+            }
+
+            string num = lblNumero.Text;
+            if (num.Length >= 0)
+            {
+                lblNumero.Text = lblNumero.Text + "8";
+
             }
         }
 
@@ -157,6 +213,13 @@ namespace urnaEletronicaTCC
             {
                 txt2.Text = "9";
             }
+
+            string num = lblNumero.Text;
+            if (num.Length >= 0)
+            {
+                lblNumero.Text = lblNumero.Text + "9";
+
+            }
         }
 
         private void btn0_Click(object sender, EventArgs e)
@@ -168,6 +231,13 @@ namespace urnaEletronicaTCC
             else
             {
                 txt2.Text = "0";
+            }
+
+            string num = lblNumero.Text;
+            if (num.Length >= 0)
+            {
+                lblNumero.Text = lblNumero.Text + "0";
+
             }
         }
 
