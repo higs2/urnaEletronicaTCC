@@ -43,19 +43,13 @@
             this.btnCorrigir = new System.Windows.Forms.Button();
             this.btnConfirma = new System.Windows.Forms.Button();
             this.btnBranco = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.txt1 = new System.Windows.Forms.TextBox();
             this.txt2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblCurso = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbFoto = new System.Windows.Forms.PictureBox();
             this.lblNumero = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtCurso = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +67,7 @@
             // btn0
             // 
             this.btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn0.Location = new System.Drawing.Point(159, 210);
+            this.btn0.Location = new System.Drawing.Point(160, 210);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(43, 46);
             this.btn0.TabIndex = 1;
@@ -128,7 +122,7 @@
             // btn2
             // 
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(159, 21);
+            this.btn2.Location = new System.Drawing.Point(160, 21);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(43, 46);
             this.btn2.TabIndex = 7;
@@ -139,7 +133,7 @@
             // btn5
             // 
             this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(159, 81);
+            this.btn5.Location = new System.Drawing.Point(160, 81);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(43, 46);
             this.btn5.TabIndex = 4;
@@ -150,7 +144,7 @@
             // btn8
             // 
             this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(159, 145);
+            this.btn8.Location = new System.Drawing.Point(160, 145);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(43, 46);
             this.btn8.TabIndex = 5;
@@ -186,7 +180,7 @@
             this.groupBox1.Controls.Add(this.btn5);
             this.groupBox1.Controls.Add(this.btn8);
             this.groupBox1.Controls.Add(this.btn1);
-            this.groupBox1.Location = new System.Drawing.Point(576, 162);
+            this.groupBox1.Location = new System.Drawing.Point(523, 213);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(366, 341);
             this.groupBox1.TabIndex = 14;
@@ -227,128 +221,74 @@
             this.btnBranco.Text = "Branco";
             this.btnBranco.UseVisualStyleBackColor = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 200);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 29);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Candidato";
-            // 
             // txt1
             // 
             this.txt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1.Location = new System.Drawing.Point(190, 200);
+            this.txt1.Location = new System.Drawing.Point(279, 285);
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(43, 29);
             this.txt1.TabIndex = 18;
+            this.txt1.TextChanged += new System.EventHandler(this.txt1_TextChanged);
             // 
             // txt2
             // 
             this.txt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt2.Location = new System.Drawing.Point(239, 200);
+            this.txt2.Location = new System.Drawing.Point(330, 285);
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(43, 29);
             this.txt2.TabIndex = 19;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(41, 259);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 20);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Número:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(41, 320);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 20);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Nome:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(41, 372);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 20);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Curso:";
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(137, 320);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(54, 20);
-            this.lblNome.TabIndex = 26;
-            this.lblNome.Text = "teste2";
-            // 
-            // lblCurso
-            // 
-            this.lblCurso.AutoSize = true;
-            this.lblCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurso.Location = new System.Drawing.Point(137, 372);
-            this.lblCurso.Name = "lblCurso";
-            this.lblCurso.Size = new System.Drawing.Size(49, 20);
-            this.lblCurso.TabIndex = 27;
-            this.lblCurso.Text = "Teste";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::urnaEletronicaTCC.Properties.Resources.Logo_Mercurio_Eleitoral1;
-            this.pictureBox2.Location = new System.Drawing.Point(172, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(527, 144);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 29;
-            this.pictureBox2.TabStop = false;
-            // 
             // pbFoto
             // 
-            this.pbFoto.Location = new System.Drawing.Point(309, 200);
+            this.pbFoto.Location = new System.Drawing.Point(86, 37);
             this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(244, 214);
+            this.pbFoto.Size = new System.Drawing.Size(245, 215);
             this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFoto.TabIndex = 28;
             this.pbFoto.TabStop = false;
+            this.pbFoto.Click += new System.EventHandler(this.pbFoto_Click);
             // 
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
             this.lblNumero.BackColor = System.Drawing.Color.White;
             this.lblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumero.Location = new System.Drawing.Point(116, 249);
+            this.lblNumero.Location = new System.Drawing.Point(221, 351);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Padding = new System.Windows.Forms.Padding(50, 10, 50, 10);
-            this.lblNumero.Size = new System.Drawing.Size(100, 40);
+            this.lblNumero.Size = new System.Drawing.Size(140, 40);
             this.lblNumero.TabIndex = 30;
+            this.lblNumero.Text = "num";
+            // 
+            // txtNome
+            // 
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(186, 423);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(187, 31);
+            this.txtNome.TabIndex = 31;
+            this.txtNome.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txtCurso
+            // 
+            this.txtCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurso.Location = new System.Drawing.Point(186, 490);
+            this.txtCurso.Name = "txtCurso";
+            this.txtCurso.Size = new System.Drawing.Size(187, 31);
+            this.txtCurso.TabIndex = 32;
             // 
             // frmUrna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 515);
+            this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.fundo_urna_god;
+            this.ClientSize = new System.Drawing.Size(954, 566);
+            this.Controls.Add(this.txtCurso);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblNumero);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pbFoto);
-            this.Controls.Add(this.lblCurso);
-            this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.txt1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -358,7 +298,6 @@
             this.Text = " ";
             this.Load += new System.EventHandler(this.frmUrna_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -381,16 +320,11 @@
         private System.Windows.Forms.Button btnCorrigir;
         private System.Windows.Forms.Button btnConfirma;
         private System.Windows.Forms.Button btnBranco;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.TextBox txt2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.Label lblCurso;
         private System.Windows.Forms.PictureBox pbFoto;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblNumero;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtCurso;
     }
 }

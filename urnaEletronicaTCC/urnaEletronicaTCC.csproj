@@ -154,5 +154,11 @@
   <ItemGroup>
     <None Include="Resources\Logo Mercurio Eleitoral1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo urna.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo urna god.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

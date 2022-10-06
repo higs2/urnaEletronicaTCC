@@ -53,6 +53,7 @@ namespace urnaEletronicaTCC
            
             }
 
+            /*
             try
             {
 
@@ -80,7 +81,7 @@ namespace urnaEletronicaTCC
             {
                 conexao.Close();
             }
-          
+            */
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -267,7 +268,29 @@ namespace urnaEletronicaTCC
             }
         }
 
-     
-       
+        private void lblCurso_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbFoto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

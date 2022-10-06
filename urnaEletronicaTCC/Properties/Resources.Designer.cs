@@ -63,6 +63,26 @@ namespace urnaEletronicaTCC.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fundo_urna {
+            get {
+                object obj = ResourceManager.GetObject("fundo urna", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundo_urna_god {
+            get {
+                object obj = ResourceManager.GetObject("fundo urna god", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_Mercurio_Eleitoral {
             get {
                 object obj = ResourceManager.GetObject("Logo Mercurio Eleitoral", resourceCulture);
