@@ -252,7 +252,6 @@
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(43, 29);
             this.txt2.TabIndex = 19;
-            this.txt2.TextChanged += new System.EventHandler(this.txt2_TextChanged);
             // 
             // label4
             // 
@@ -307,7 +306,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::urnaEletronicaTCC.Properties.Resources.Logo_Mercurio_Eleitoral1;
-            this.pictureBox2.Location = new System.Drawing.Point(179, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(172, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(527, 144);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -356,7 +355,7 @@
             this.MaximizeBox = false;
             this.Name = "frmUrna";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Urna Eletrônica";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.frmUrna_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

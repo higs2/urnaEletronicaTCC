@@ -25,7 +25,7 @@ namespace urnaEletronicaTCC
 
         private void frmUrna_Load(object sender, EventArgs e)
         {
-           
+
         }
         
        
@@ -53,7 +53,33 @@ namespace urnaEletronicaTCC
            
             }
 
+            try
+            {
 
+                conexao = Conexao.Conectar();
+                MySqlCommand cmd = new MySqlCommand("SELECT nome,curso,foto FROM cadastro WHERE numero=1", conexao);
+                cmd.Parameters.Clear();
+                cmd.Parameters.Add("@id_user", MySqlDbType.Int32).Value = lblNumero.Text;
+
+                cmd.CommandType = CommandType.Text;
+
+                MySqlDataReader dr;
+                dr = cmd.ExecuteReader();
+                dr.Read();
+
+                lblNome.Text = dr.GetString(0);
+                lblCurso.Text = dr.GetString(1);
+                pbFoto.Text = dr.GetString(2);
+            }
+            catch (Exception)
+            {
+
+                return;
+            }
+            finally
+            {
+                conexao.Close();
+            }
           
         }
 
@@ -82,7 +108,7 @@ namespace urnaEletronicaTCC
         {
             txt1.Clear();
             txt2.Clear();
-            
+            lblNumero.Text = "";
 
         }
 
@@ -241,11 +267,7 @@ namespace urnaEletronicaTCC
             }
         }
 
-        private void txt2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+     
        
     }
 }
