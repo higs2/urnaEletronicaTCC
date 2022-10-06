@@ -272,7 +272,7 @@
             // txtCurso
             // 
             this.txtCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurso.Location = new System.Drawing.Point(186, 490);
+            this.txtCurso.Location = new System.Drawing.Point(186, 491);
             this.txtCurso.Name = "txtCurso";
             this.txtCurso.Size = new System.Drawing.Size(187, 31);
             this.txtCurso.TabIndex = 32;
@@ -282,7 +282,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.fundo_urna_god;
-            this.ClientSize = new System.Drawing.Size(954, 566);
+            this.ClientSize = new System.Drawing.Size(967, 586);
             this.Controls.Add(this.txtCurso);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblNumero);
