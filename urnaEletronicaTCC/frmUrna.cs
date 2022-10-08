@@ -111,6 +111,8 @@ namespace urnaEletronicaTCC
             txt1.Clear();
             txt2.Clear();
             lblNumero.Text = "";
+            txtNome.Clear();
+            txtCurso.Clear();
 
         }
 
@@ -291,7 +293,7 @@ namespace urnaEletronicaTCC
                     dataRow = dt.Rows[cont];
                     txtNome.Text = Convert.ToString(dataRow["nome"]);
                     txtCurso.Text = Convert.ToString(dataRow["curso"]);
-
+                    pbFoto.Image = Properties.Resources.VOTACAO;
                     cont++;
                 }
 
@@ -300,7 +302,7 @@ namespace urnaEletronicaTCC
             }
             catch (Exception ex)
             {
-                return;
+                MessageBox.Show(ex.Message);
 
             }
             finally
