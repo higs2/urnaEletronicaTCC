@@ -268,7 +268,6 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(187, 31);
             this.txtNome.TabIndex = 31;
-            this.txtNome.Text = "a";
             // 
             // txtCurso
             // 

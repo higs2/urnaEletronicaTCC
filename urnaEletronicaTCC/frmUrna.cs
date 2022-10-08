@@ -276,31 +276,32 @@ namespace urnaEletronicaTCC
 
         private void txt2_TextChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnConfirma_Click(object sender, EventArgs e)
-        {
-
             try
             {
                 conexao = Conexao.Conectar();
-                /*
+
                 CadastroController cadastro = new CadastroController();
-                DataTable dt  = new DataTable();
-             
-
+                DataTable dt = new DataTable();
+                DataRow dataRow;
+                int cont = 0;
                 dt = cadastro.exibirCandidatos();
-                dt.Rows[0]["curso"].ToString();
-                */
+                // dt.Rows[0]["curso"].ToString();
+                while (cont <= dt.Rows.Count)
+                {
+                    dataRow = dt.Rows[cont];
+                    txtNome.Text = Convert.ToString(dataRow["nome"]);
+                    txtCurso.Text = Convert.ToString(dataRow["curso"]);
 
-               
+                    cont++;
+                }
+
+
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show(" Falha na conexão:" + ex.Message, "falha", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+                return;
+
             }
             finally
             {
@@ -308,6 +309,12 @@ namespace urnaEletronicaTCC
 
 
             }
+        }
+
+        private void btnConfirma_Click(object sender, EventArgs e)
+        {
+
+           
         }
 
         private void txt1_TextChanged(object sender, EventArgs e)
