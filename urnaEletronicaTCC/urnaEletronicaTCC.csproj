@@ -160,5 +160,23 @@
   <ItemGroup>
     <None Include="Resources\fundo urna god.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tela2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao cadastrar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao cadastrar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOTAO CANCELAR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CADASTRAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FOTOESCOLHA.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

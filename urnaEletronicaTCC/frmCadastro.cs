@@ -94,5 +94,10 @@ namespace urnaEletronicaTCC
                 Application.Exit();
             }
         }
+
+        private void txtNumero_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -63,6 +63,56 @@ namespace urnaEletronicaTCC.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap botao_cadastrar {
+            get {
+                object obj = ResourceManager.GetObject("botao cadastrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap botao_cadastrar1 {
+            get {
+                object obj = ResourceManager.GetObject("botao cadastrar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BOTAO_CANCELAR {
+            get {
+                object obj = ResourceManager.GetObject("BOTAO CANCELAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CADASTRAR {
+            get {
+                object obj = ResourceManager.GetObject("CADASTRAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FOTOESCOLHA {
+            get {
+                object obj = ResourceManager.GetObject("FOTOESCOLHA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fundo_urna {
             get {
                 object obj = ResourceManager.GetObject("fundo urna", resourceCulture);
@@ -96,6 +146,16 @@ namespace urnaEletronicaTCC.Properties {
         internal static System.Drawing.Bitmap Logo_Mercurio_Eleitoral1 {
             get {
                 object obj = ResourceManager.GetObject("Logo Mercurio Eleitoral1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tela2 {
+            get {
+                object obj = ResourceManager.GetObject("tela2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
