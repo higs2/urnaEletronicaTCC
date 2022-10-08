@@ -178,5 +178,17 @@
   <ItemGroup>
     <None Include="Resources\FOTOESCOLHA.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tela3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CADASTRO CAND.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VOTACAO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\APURACAO.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

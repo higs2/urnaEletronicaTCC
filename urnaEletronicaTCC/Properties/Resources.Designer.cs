@@ -63,6 +63,16 @@ namespace urnaEletronicaTCC.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap APURACAO {
+            get {
+                object obj = ResourceManager.GetObject("APURACAO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap botao_cadastrar {
             get {
                 object obj = ResourceManager.GetObject("botao cadastrar", resourceCulture);
@@ -96,6 +106,16 @@ namespace urnaEletronicaTCC.Properties {
         internal static System.Drawing.Bitmap CADASTRAR {
             get {
                 object obj = ResourceManager.GetObject("CADASTRAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CADASTRO_CAND {
+            get {
+                object obj = ResourceManager.GetObject("CADASTRO CAND", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +183,29 @@ namespace urnaEletronicaTCC.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tela3 {
+            get {
+                object obj = ResourceManager.GetObject("tela3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tendencias_de_ti_que_voce_deve_ficar_de_olho {
             get {
                 object obj = ResourceManager.GetObject("tendencias-de-ti-que-voce-deve-ficar-de-olho", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VOTACAO {
+            get {
+                object obj = ResourceManager.GetObject("VOTACAO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
