@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Management;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -268,19 +269,45 @@ namespace urnaEletronicaTCC
             }
         }
 
-        private void lblCurso_Click(object sender, EventArgs e)
+
+        private void txt2_KeyDown(object sender, KeyEventArgs e)
+        {
+        }
+
+        private void txt2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void pbFoto_Click(object sender, EventArgs e)
+        private void btnConfirma_Click(object sender, EventArgs e)
         {
 
-        }
+            try
+            {
+                conexao = Conexao.Conectar();
+                /*
+                CadastroController cadastro = new CadastroController();
+                DataTable dt  = new DataTable();
+             
 
-        private void lblNome_Click(object sender, EventArgs e)
-        {
+                dt = cadastro.exibirCandidatos();
+                dt.Rows[0]["curso"].ToString();
+                */
 
+               
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(" Falha na conexão:" + ex.Message, "falha", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            }
+            finally
+            {
+                conexao.Close();
+
+
+            }
         }
 
         private void txt1_TextChanged(object sender, EventArgs e)
@@ -288,9 +315,6 @@ namespace urnaEletronicaTCC
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

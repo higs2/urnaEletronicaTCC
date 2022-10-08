@@ -210,6 +210,7 @@
             this.btnConfirma.TabIndex = 13;
             this.btnConfirma.Text = "Confirmar";
             this.btnConfirma.UseVisualStyleBackColor = false;
+            this.btnConfirma.Click += new System.EventHandler(this.btnConfirma_Click);
             // 
             // btnBranco
             // 
@@ -228,7 +229,6 @@
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(43, 29);
             this.txt1.TabIndex = 18;
-            this.txt1.TextChanged += new System.EventHandler(this.txt1_TextChanged);
             // 
             // txt2
             // 
@@ -237,6 +237,8 @@
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(43, 29);
             this.txt2.TabIndex = 19;
+            this.txt2.TextChanged += new System.EventHandler(this.txt2_TextChanged);
+            this.txt2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt2_KeyDown);
             // 
             // pbFoto
             // 
@@ -246,7 +248,6 @@
             this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFoto.TabIndex = 28;
             this.pbFoto.TabStop = false;
-            this.pbFoto.Click += new System.EventHandler(this.pbFoto_Click);
             // 
             // lblNumero
             // 
@@ -267,7 +268,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(187, 31);
             this.txtNome.TabIndex = 31;
-            this.txtNome.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtNome.Text = "a";
             // 
             // txtCurso
             // 
