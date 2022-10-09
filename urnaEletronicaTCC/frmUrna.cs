@@ -4,14 +4,17 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Management;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using urnaEletronicaTCC.Controllers;
 using urnaEletronicaTCC.Models;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace urnaEletronicaTCC
 {
@@ -22,6 +25,7 @@ namespace urnaEletronicaTCC
             InitializeComponent();
         }
         MySqlConnection conexao = new MySqlConnection();
+    
 
 
         private void frmUrna_Load(object sender, EventArgs e)
@@ -54,35 +58,7 @@ namespace urnaEletronicaTCC
            
             }
 
-            /*
-            try
-            {
-
-                conexao = Conexao.Conectar();
-                MySqlCommand cmd = new MySqlCommand("SELECT nome,curso,foto FROM cadastro WHERE numero=1", conexao);
-                cmd.Parameters.Clear();
-                cmd.Parameters.Add("@id_user", MySqlDbType.Int32).Value = lblNumero.Text;
-
-                cmd.CommandType = CommandType.Text;
-
-                MySqlDataReader dr;
-                dr = cmd.ExecuteReader();
-                dr.Read();
-
-                lblNome.Text = dr.GetString(0);
-                lblCurso.Text = dr.GetString(1);
-                pbFoto.Text = dr.GetString(2);
-            }
-            catch (Exception)
-            {
-
-                return;
-            }
-            finally
-            {
-                conexao.Close();
-            }
-            */
+          
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -113,6 +89,7 @@ namespace urnaEletronicaTCC
             lblNumero.Text = "";
             txtNome.Clear();
             txtCurso.Clear();
+            pbFoto.ResetText();
 
         }
 
@@ -287,22 +264,34 @@ namespace urnaEletronicaTCC
                 DataRow dataRow;
                 int cont = 0;
                 dt = cadastro.exibirCandidatos();
+
                 // dt.Rows[0]["curso"].ToString();
+
+                    /*
+                    MySqlCommand cmd = new MySqlCommand("SELECT nome,curso,foto FROM cadastro WHRERE numero=@numero", conexao);
+                    cmd.Parameters.AddWithValue("@numero",txt2.Text);
+                    cmd.ExecuteNonQuery();
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    dt.Load(reader);
+                    */
                 while (cont <= dt.Rows.Count)
                 {
+                    
                     dataRow = dt.Rows[cont];
                     txtNome.Text = Convert.ToString(dataRow["nome"]);
                     txtCurso.Text = Convert.ToString(dataRow["curso"]);
-                    pbFoto.Image = Properties.Resources.VOTACAO;
+                    pbFoto.Image = Image.FromFile(dataRow["foto"].ToString());
+                    
                     cont++;
                 }
 
 
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message);
+                return;
 
             }
             finally

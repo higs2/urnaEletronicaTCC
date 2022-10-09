@@ -25,8 +25,10 @@ namespace urnaEletronicaTCC
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
-            
-            dialog.Filter = "JPG Files(*.jpg)| *.jpg | PNG Files(*.png)| *.png | AllFiles(*.*)| *.*";
+
+            //dialog.Filter = "JPG Files(*.jpg)| *.jpg | PNG Files(*.png)| *.png | AllFiles(*.*)| *.*";
+            dialog.Filter = "(*.jpg;*.bmp;*.jpeg;*png;*.*)|*.jpg;*.bmp;*.jpeg;*png;*.*";
+            dialog.Title = "Selecione uma Imagem";
             if (dialog.ShowDialog() == DialogResult.OK) 
             {
                 string foto = dialog.FileName.ToString();
