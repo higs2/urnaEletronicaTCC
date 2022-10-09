@@ -74,6 +74,26 @@ namespace urnaEletronicaTCC.Controllers
 
         }
 
-      
+        public bool puxarDados(Cadastro dados)
+        {
+            try
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("SELECT nome,curso,foto FROM cadastro WHERE numero = @numero", conexao);
+                cmd.Parameters.AddWithValue("@numero", dados.numero);
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+        }
+
     }
 }

@@ -10,7 +10,7 @@ namespace urnaEletronicaTCC.Models
     {
         public int id_user { get; set; }
         public string nome { get; set; }
-        public int numero { get; set; }
+        public string numero { get; set; }
         public string curso { get; set; }
         public string foto { get; set; }
 
@@ -19,7 +19,7 @@ namespace urnaEletronicaTCC.Models
         public Cadastro
             (
             string _nome,
-            int _numero,
+            string _numero,
             string _curso,
             string _foto
 

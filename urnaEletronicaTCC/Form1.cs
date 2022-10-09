@@ -36,7 +36,7 @@ namespace urnaEletronicaTCC
             Cadastro votos= new Cadastro();
             votos.id_user= Convert.ToInt32(dgvCandidato.SelectedRows[0].Cells[0].Value);
             votos.nome = dgvCandidato.SelectedRows[0].Cells[1].Value.ToString();
-            votos.numero = Convert.ToInt32(dgvCandidato.SelectedRows[0].Cells[2].Value);
+            votos.numero = dgvCandidato.SelectedRows[0].Cells[2].Value.ToString();
             votos.curso = dgvCandidato.SelectedRows[0].Cells[3].Value.ToString();
             
             return votos;

@@ -267,20 +267,22 @@ namespace urnaEletronicaTCC
 
                 // dt.Rows[0]["curso"].ToString();
 
-                    /*
-                    MySqlCommand cmd = new MySqlCommand("SELECT nome,curso,foto FROM cadastro WHRERE numero=@numero", conexao);
-                    cmd.Parameters.AddWithValue("@numero",txt2.Text);
-                    cmd.ExecuteNonQuery();
+                /*
+                MySqlCommand cmd = new MySqlCommand("SELECT nome,curso,foto FROM cadastro WHERE numero=1", conexao);
 
-                    MySqlDataReader reader = cmd.ExecuteReader();
-                    dt.Load(reader);
-                    */
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+                dt.Load(reader);*/
+            
+             
+
                 while (cont <= dt.Rows.Count)
                 {
                     
                     dataRow = dt.Rows[cont];
-                    txtNome.Text = Convert.ToString(dataRow["nome"]);
-                    txtCurso.Text = Convert.ToString(dataRow["curso"]);
+                    txtNome.Text = dataRow["nome"].ToString();
+                    txtCurso.Text = dataRow["curso"].ToString();
                     pbFoto.Image = Image.FromFile(dataRow["foto"].ToString());
                     
                     cont++;
