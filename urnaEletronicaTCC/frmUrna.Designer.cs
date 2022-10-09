@@ -239,7 +239,7 @@
             this.txt2.Size = new System.Drawing.Size(43, 29);
             this.txt2.TabIndex = 1;
             this.txt2.TextChanged += new System.EventHandler(this.txt2_TextChanged);
-            this.txt2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt2_KeyDown);
+       
             // 
             // pbFoto
             // 

@@ -82,16 +82,6 @@ namespace urnaEletronicaTCC
             }
         }
 
-        private void btnCorrigir_Click(object sender, EventArgs e)
-        {
-            txt1.Clear();
-            txt2.Clear();
-            lblNumero.Text = "";
-            txtNome.Clear();
-            txtCurso.Clear();
-            pbFoto.ResetText();
-
-        }
 
         private void btn3_Click(object sender, EventArgs e)
         {
@@ -248,10 +238,17 @@ namespace urnaEletronicaTCC
             }
         }
 
-
-        private void txt2_KeyDown(object sender, KeyEventArgs e)
+        private void btnCorrigir_Click(object sender, EventArgs e)
         {
+            txt1.Clear();
+            txt2.Clear();
+            lblNumero.Text = "";
+            txtNome.Clear();
+            txtCurso.Clear();
+            pbFoto.Image = null;
+
         }
+
 
         private void txt2_TextChanged(object sender, EventArgs e)
         {
@@ -301,10 +298,6 @@ namespace urnaEletronicaTCC
            
         }
 
-        private void txt1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
        
     }
