@@ -49,6 +49,7 @@
             this.lblNumero = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCurso = new System.Windows.Forms.TextBox();
+            this.txtFoto = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
@@ -279,12 +280,23 @@
             this.txtCurso.Size = new System.Drawing.Size(187, 31);
             this.txtCurso.TabIndex = 32;
             // 
+            // txtFoto
+            // 
+            this.txtFoto.Enabled = false;
+            this.txtFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFoto.Location = new System.Drawing.Point(337, 136);
+            this.txtFoto.Name = "txtFoto";
+            this.txtFoto.Size = new System.Drawing.Size(116, 31);
+            this.txtFoto.TabIndex = 33;
+            this.txtFoto.Visible = false;
+            // 
             // frmUrna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.fundo_urna_god;
             this.ClientSize = new System.Drawing.Size(967, 586);
+            this.Controls.Add(this.txtFoto);
             this.Controls.Add(this.txtCurso);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblNumero);
@@ -328,5 +340,6 @@
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtCurso;
+        private System.Windows.Forms.TextBox txtFoto;
     }
 }

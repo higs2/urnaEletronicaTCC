@@ -74,25 +74,33 @@ namespace urnaEletronicaTCC.Controllers
 
         }
 
-        public bool puxarDados(Cadastro dados)
+
+        //teste
+        public DataTable exibirDados(Cadastro dados)
         {
+            DataTable dt = new DataTable();
+
             try
             {
                 conexao.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT nome,curso,foto FROM cadastro WHERE numero = @numero", conexao);
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM cadastro WHERE numero=@numero", conexao);
                 cmd.Parameters.AddWithValue("@numero", dados.numero);
-                cmd.ExecuteNonQuery();
-                return true;
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+                dt.Load(reader);
+                return dt;
+
             }
             catch (Exception)
             {
 
-                return false;
+                return dt;
             }
             finally
             {
                 conexao.Close();
             }
+
         }
 
     }

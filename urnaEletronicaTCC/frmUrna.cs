@@ -257,26 +257,17 @@ namespace urnaEletronicaTCC
         {
             try
             {
+                Cadastro dados = new Cadastro( txtNome.Text,txt2.Text,txtCurso.Text,txtFoto.Text);
                 conexao = Conexao.Conectar();
 
                 CadastroController cadastro = new CadastroController();
                 DataTable dt = new DataTable();
                 DataRow dataRow;
                 int cont = 0;
-                dt = cadastro.exibirCandidatos();
+                dt = cadastro.exibirDados(dados);
 
-                // dt.Rows[0]["curso"].ToString();
-
-                /*
-                MySqlCommand cmd = new MySqlCommand("SELECT nome,curso,foto FROM cadastro WHERE numero=1", conexao);
-
-
-
-                MySqlDataReader reader = cmd.ExecuteReader();
-                dt.Load(reader);*/
-            
-             
-
+                // dt.Rows[0]["curso"].ToString();             
+                             
                 while (cont <= dt.Rows.Count)
                 {
                     
