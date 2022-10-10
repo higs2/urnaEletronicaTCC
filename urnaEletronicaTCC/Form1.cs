@@ -15,6 +15,7 @@ namespace urnaEletronicaTCC
     public partial class frmPrincipal : Form
     {
         CadastroController cadastroController = new CadastroController();
+        
         public frmPrincipal()
         {
             InitializeComponent();
@@ -51,6 +52,8 @@ namespace urnaEletronicaTCC
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
             dgvCandidato.DataSource = cadastroController.exibirCandidatos();
+            
+
             dgvCandidato.Columns[0].Width = 20;
             dgvCandidato.Columns[1].Width = 100;
             dgvCandidato.Columns[2].Width = 40;
@@ -64,6 +67,9 @@ namespace urnaEletronicaTCC
             dgvCandidato.Columns[3].HeaderText = "Curso";
             dgvCandidato.Columns[4].HeaderText = "Foto";
 
+            dgvCandidato.DataSource = cadastroController.exibirCandidatos();
+            dgvCandidato.Refresh();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -74,6 +80,11 @@ namespace urnaEletronicaTCC
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnTeste_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

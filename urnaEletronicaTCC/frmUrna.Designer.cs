@@ -221,6 +221,7 @@
             this.btnBranco.TabIndex = 12;
             this.btnBranco.Text = "Branco";
             this.btnBranco.UseVisualStyleBackColor = true;
+            this.btnBranco.Click += new System.EventHandler(this.btnBranco_Click);
             // 
             // txt1
             // 

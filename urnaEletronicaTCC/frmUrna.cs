@@ -92,20 +92,16 @@ namespace urnaEletronicaTCC
 
         private void RegistrarDigito(string digito)
         {
-            
+
             if (string.IsNullOrEmpty(txt1.Text))
             {
                 txt1.Text = digito;
 
-            }
-               
-            else
-            {
-                txt2.Text =  digito;
-                
+            } else if (!string.IsNullOrEmpty(txt1.Text)) {
+                txt2.Text = digito;
             }
 
-            
+
         }
 
       
@@ -114,7 +110,7 @@ namespace urnaEletronicaTCC
         {
             try
             {
-                Cadastro dados = new Cadastro( txtNome.Text,txt2.Text,txtCurso.Text,txtFoto.Text);
+                Cadastro dados = new Cadastro( txtNome.Text,txt1.Text+txt2.Text,txtCurso.Text,txtFoto.Text);
                 conexao = Conexao.Conectar();
                 
                 CadastroController cadastro = new CadastroController();
@@ -166,9 +162,13 @@ namespace urnaEletronicaTCC
             txtNome.Clear();
             txtCurso.Clear();
             pbFoto.Image = null;
+            numeros = null;
 
         }
 
+        private void btnBranco_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
