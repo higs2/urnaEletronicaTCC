@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Management;
+using System.Media;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -25,230 +26,89 @@ namespace urnaEletronicaTCC
             InitializeComponent();
         }
         MySqlConnection conexao = new MySqlConnection();
-    
-
-
+        public string digitoConcatenadao;
+        public string numeros;
+        
         private void frmUrna_Load(object sender, EventArgs e)
         {
-
+            
         }
-        
-       
-    
+
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            if (txt1.Text == "")
-            {
-                txt1.Text = "1";
-                
-            }
-            else
-            {
-                txt2.Text = "1";
-                
-               
-    
-            }
-            string num = lblNumero.Text;
-            if (num.Length >= 0)
-            {
-                lblNumero.Text = lblNumero.Text +  "1";
-                
-           
-            }
-
+            RegistrarDigito("1");
           
+
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            if (txt1.Text == "")
-            {
-                txt1.Text = "2";
-               
-            }
-            else
-            {
-                txt2.Text = "2";          
-
-            }
-
-            string num = lblNumero.Text;
-            if (num.Length >= 0)
-            {
-                lblNumero.Text = lblNumero.Text + "2";
-
-            }
+            RegistrarDigito("2");
         }
 
 
         private void btn3_Click(object sender, EventArgs e)
         {
-          
-            if (txt1.Text == "")
-            {
-                txt1.Text = "3";
-               
-            }
-            else
-            {
-                txt2.Text = "3";
-              
-            }
 
-            string num = lblNumero.Text;
-            if (num.Length >= 0)
-            {
-                lblNumero.Text = lblNumero.Text + "3";
-
-            }
+            RegistrarDigito("3");
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            if (txt1.Text == "")
-            {
-                txt1.Text = "4";
-            }
-            else
-            {
-                txt2.Text = "4";
-            }
-
-            string num = lblNumero.Text;
-            if (num.Length >= 0)
-            {
-                lblNumero.Text = lblNumero.Text + "4";
-
-            }
+            RegistrarDigito("4");
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            if (txt1.Text == "")
-            {
-                txt1.Text = "5";
-            }
-            else
-            {
-                txt2.Text = "5";
-            }
-
-            string num = lblNumero.Text;
-            if (num.Length >= 0)
-            {
-                lblNumero.Text = lblNumero.Text + "5";
-
-            }
+            RegistrarDigito("5");
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            if (txt1.Text == "")
-            {
-                txt1.Text = "6";
-            }
-            else
-            {
-                txt2.Text = "6";
-            }
-
-            string num = lblNumero.Text;
-            if (num.Length >= 0)
-            {
-                lblNumero.Text = lblNumero.Text + "6";
-
-            }
+            RegistrarDigito("6");
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            if (txt1.Text == "")
-            {
-                txt1.Text = "7";
-            }
-            else
-            {
-                txt2.Text = "7";
-            }
-
-            string num = lblNumero.Text;
-            if (num.Length >= 0)
-            {
-                lblNumero.Text = lblNumero.Text + "7";
-
-            }
+            RegistrarDigito("7");
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            if (txt1.Text == "")
-            {
-                txt1.Text = "8";
-            }
-            else
-            {
-                txt2.Text = "8";
-            }
-
-            string num = lblNumero.Text;
-            if (num.Length >= 0)
-            {
-                lblNumero.Text = lblNumero.Text + "8";
-
-            }
+            RegistrarDigito("8");
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            if (txt1.Text == "")
-            {
-                txt1.Text = "9";
-            }
-            else
-            {
-                txt2.Text = "9";
-            }
-
-            string num = lblNumero.Text;
-            if (num.Length >= 0)
-            {
-                lblNumero.Text = lblNumero.Text + "9";
-
-            }
+            RegistrarDigito("9");
         }
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            if (txt1.Text == "")
+            RegistrarDigito("0");
+        }
+
+
+        private void RegistrarDigito(string digito)
+        {
+            
+            if (string.IsNullOrEmpty(txt1.Text))
             {
-                txt1.Text = "0";
+                txt1.Text = digito;
+
             }
+               
             else
             {
-                txt2.Text = "0";
+                txt2.Text =  digito;
+                
             }
 
-            string num = lblNumero.Text;
-            if (num.Length >= 0)
-            {
-                lblNumero.Text = lblNumero.Text + "0";
-
-            }
+            
         }
 
-        private void btnCorrigir_Click(object sender, EventArgs e)
-        {
-            txt1.Clear();
-            txt2.Clear();
-            lblNumero.Text = "";
-            txtNome.Clear();
-            txtCurso.Clear();
-            pbFoto.Image = null;
-
-        }
-
+      
 
         private void txt2_TextChanged(object sender, EventArgs e)
         {
@@ -256,7 +116,7 @@ namespace urnaEletronicaTCC
             {
                 Cadastro dados = new Cadastro( txtNome.Text,txt2.Text,txtCurso.Text,txtFoto.Text);
                 conexao = Conexao.Conectar();
-
+                
                 CadastroController cadastro = new CadastroController();
                 DataTable dt = new DataTable();
                 DataRow dataRow;
@@ -298,7 +158,17 @@ namespace urnaEletronicaTCC
            
         }
 
+        private void btnCorrigir_Click(object sender, EventArgs e)
+        {
+            txt1.Clear();
+            txt2.Clear();
+          
+            txtNome.Clear();
+            txtCurso.Clear();
+            pbFoto.Image = null;
 
-       
+        }
+
+
     }
 }

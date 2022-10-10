@@ -1,0 +1,6 @@
+
+COMPUTAR + 1 VOTO
+
+UPDATE cadastro
+SET voto = voto + 1
+WHERE id_user = @id_user
