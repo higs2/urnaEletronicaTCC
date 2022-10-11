@@ -19,6 +19,12 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace urnaEletronicaTCC
 {
+
+    //update cadastro set votos=votos+1 where numero="4";
+
+    //select nome, numero, votos from cadastro where votos is not null order by votos desc;
+
+
     public partial class frmUrna : Form
     {
         public frmUrna()

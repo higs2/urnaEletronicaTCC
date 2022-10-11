@@ -32,17 +32,7 @@ namespace urnaEletronicaTCC
             frmCadastro cadastro = new frmCadastro();
             cadastro.ShowDialog();
         }
-        private Cadastro exibirVotos()
-        {
-            Cadastro votos= new Cadastro();
-            votos.id_user= Convert.ToInt32(dgvCandidato.SelectedRows[0].Cells[0].Value);
-            votos.nome = dgvCandidato.SelectedRows[0].Cells[1].Value.ToString();
-            votos.numero = dgvCandidato.SelectedRows[0].Cells[2].Value.ToString();
-            votos.curso = dgvCandidato.SelectedRows[0].Cells[3].Value.ToString();
-            
-            return votos;
-
-        }
+        
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -53,7 +43,6 @@ namespace urnaEletronicaTCC
         {
             dgvCandidato.DataSource = cadastroController.exibirCandidatos();
             
-
             dgvCandidato.Columns[0].Width = 20;
             dgvCandidato.Columns[1].Width = 100;
             dgvCandidato.Columns[2].Width = 40;
@@ -67,8 +56,7 @@ namespace urnaEletronicaTCC
             dgvCandidato.Columns[3].HeaderText = "Curso";
             dgvCandidato.Columns[4].HeaderText = "Foto";
 
-            dgvCandidato.DataSource = cadastroController.exibirCandidatos();
-            dgvCandidato.Refresh();
+            
 
         }
 

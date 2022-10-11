@@ -24,6 +24,12 @@ namespace urnaEletronicaTCC.Controllers
             try
             {
                 conexao.Open();
+               /*MySqlCommand x = new MySqlCommand("SELECT id_user,nome,numero,curso,foto FROM cadastro WHERE numero=@numero", conexao);
+               x.Parameters.AddWithValue("@numero", save.numero);
+                if(!x.row)
+                {
+                    return false;
+                } */
                 MySqlCommand cmd = new MySqlCommand("INSERT INTO cadastro (nome,numero,curso,foto) " +
                                                         "VALUES (@nome,@numero,@curso,@foto)", conexao);
 

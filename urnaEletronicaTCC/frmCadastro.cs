@@ -65,15 +65,18 @@ namespace urnaEletronicaTCC
             
 
             CadastroController cadastroController = new CadastroController();
+            
             bool verifica  = cadastroController.salvarCadastro(save);
-
+           
+            
             if (verifica)
             {
                 MessageBox.Show("Cadastro realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                
                 if (MessageBox.Show("Deseja Continuar cadastrando", "Cadastro", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     limparCampos();
+                    
 
                 }
                 else

@@ -37,7 +37,6 @@
             this.btnApuracao = new System.Windows.Forms.Button();
             this.btnVotacao = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.btnTeste = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCandidato)).BeginInit();
             this.SuspendLayout();
@@ -126,26 +125,12 @@
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // btnTeste
-            // 
-            this.btnTeste.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.APURACAO;
-            this.btnTeste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeste.ForeColor = System.Drawing.Color.Transparent;
-            this.btnTeste.Location = new System.Drawing.Point(649, 58);
-            this.btnTeste.Name = "btnTeste";
-            this.btnTeste.Size = new System.Drawing.Size(106, 47);
-            this.btnTeste.TabIndex = 17;
-            this.btnTeste.Text = "teste";
-            this.btnTeste.UseVisualStyleBackColor = true;
-            this.btnTeste.Click += new System.EventHandler(this.btnTeste_Click);
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.tela3;
             this.ClientSize = new System.Drawing.Size(784, 514);
-            this.Controls.Add(this.btnTeste);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.dgvCandidato);
             this.Controls.Add(this.btnZerarCandidatos);
@@ -178,7 +163,6 @@
         private System.Windows.Forms.Button btnApuracao;
         private System.Windows.Forms.Button btnVotacao;
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.Button btnTeste;
     }
 }
 
