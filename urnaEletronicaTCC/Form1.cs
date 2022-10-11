@@ -31,6 +31,12 @@ namespace urnaEletronicaTCC
         {
             frmCadastro cadastro = new frmCadastro();
             cadastro.ShowDialog();
+            dgvCandidato.BeginInvoke((MethodInvoker)delegate ()
+            {
+                
+                dgvCandidato.DataSource = cadastroController.exibirCandidatos();
+                dgvCandidato.Refresh();
+            });
         }
         
 
