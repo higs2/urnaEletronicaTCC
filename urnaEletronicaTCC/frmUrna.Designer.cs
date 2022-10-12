@@ -230,6 +230,7 @@
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(43, 29);
             this.txt1.TabIndex = 0;
+            this.txt1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt1_KeyDown);
             // 
             // txt2
             // 
@@ -297,6 +298,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Load += new System.EventHandler(this.frmUrna_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmUrna_KeyPress);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.ResumeLayout(false);

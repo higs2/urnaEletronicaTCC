@@ -34,91 +34,95 @@ namespace urnaEletronicaTCC
         MySqlConnection conexao = new MySqlConnection();
         public string digitoConcatenadao;
         public string numeros;
-        
+
         private void frmUrna_Load(object sender, EventArgs e)
         {
-            
+
         }
 
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            RegistrarDigito("1");
-          
+            registrarDigito("1");
+
+
 
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            RegistrarDigito("2");
+            registrarDigito("2");
         }
 
 
         private void btn3_Click(object sender, EventArgs e)
         {
 
-            RegistrarDigito("3");
+            registrarDigito("3");
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            RegistrarDigito("4");
+            registrarDigito("4");
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            RegistrarDigito("5");
+            registrarDigito("5");
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            RegistrarDigito("6");
+            registrarDigito("6");
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            RegistrarDigito("7");
+            registrarDigito("7");
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            RegistrarDigito("8");
+            registrarDigito("8");
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            RegistrarDigito("9");
+            registrarDigito("9");
         }
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            RegistrarDigito("0");
+            registrarDigito("0");
         }
 
 
-        private void RegistrarDigito(string digito)
+        private void registrarDigito(string digito)
         {
 
             if (string.IsNullOrEmpty(txt1.Text))
             {
                 txt1.Text = digito;
+              
+
 
             } else if (!string.IsNullOrEmpty(txt1.Text)) {
                 txt2.Text = digito;
+               
             }
 
 
         }
 
-      
+
 
         private void txt2_TextChanged(object sender, EventArgs e)
         {
             try
             {
-                Cadastro dados = new Cadastro( txtNome.Text,txt1.Text+txt2.Text,txtCurso.Text,txtFoto.Text);
+                Cadastro dados = new Cadastro(txtNome.Text, txt1.Text + txt2.Text, txtCurso.Text, txtFoto.Text);
                 conexao = Conexao.Conectar();
-                
+
                 CadastroController cadastro = new CadastroController();
                 DataTable dt = new DataTable();
                 DataRow dataRow;
@@ -126,15 +130,15 @@ namespace urnaEletronicaTCC
                 dt = cadastro.exibirDados(dados);
 
                 // dt.Rows[0]["curso"].ToString();             
-                             
+
                 while (cont <= dt.Rows.Count)
                 {
-                    
+
                     dataRow = dt.Rows[cont];
                     txtNome.Text = dataRow["nome"].ToString();
                     txtCurso.Text = dataRow["curso"].ToString();
                     pbFoto.Image = Image.FromFile(dataRow["foto"].ToString());
-                    
+
                     cont++;
                 }
 
@@ -153,6 +157,8 @@ namespace urnaEletronicaTCC
 
             }
         }
+       
+           
 
         private void btnConfirma_Click(object sender, EventArgs e)
         {
@@ -175,6 +181,58 @@ namespace urnaEletronicaTCC
         private void btnBranco_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void frmUrna_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+
+            switch (e.KeyChar)
+            {
+                case (char)48: 
+                    txt1.Text = txt1.Text + "0";
+                  
+                    break;
+
+                case (char)49:
+                    txt1.Text = txt1.Text + "1";
+                    break;
+                case (char)50:
+                    txt1.Text = txt1.Text + "2";
+                    break;
+                case (char)51:
+                    txt1.Text = txt1.Text + "3";
+                    break;
+
+                case (char)52:
+                    txt1.Text = txt1.Text + "4";
+                    break;
+                case (char)53:
+                    txt1.Text = txt1.Text + "5";
+                    break;
+                case (char)54:
+                    txt1.Text = txt1.Text + "6";
+                    break;
+
+                case (char)55:
+                    txt1.Text = txt1.Text + "7";
+                    break;
+                case (char)56:
+                    txt1.Text = txt1.Text + "8";
+                    break;
+                case (char)57:
+                    txt1.Text = txt1.Text + "9";
+                    break;
+
+                default:
+
+                    break;
+            }
         }
     }
 }
