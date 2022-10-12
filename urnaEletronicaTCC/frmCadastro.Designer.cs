@@ -60,7 +60,7 @@
             this.btnCadastrar.Location = new System.Drawing.Point(37, 527);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(135, 51);
-            this.btnCadastrar.TabIndex = 2;
+            this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
@@ -71,7 +71,7 @@
             this.txtCurso.Location = new System.Drawing.Point(52, 473);
             this.txtCurso.Name = "txtCurso";
             this.txtCurso.Size = new System.Drawing.Size(260, 22);
-            this.txtCurso.TabIndex = 3;
+            this.txtCurso.TabIndex = 2;
             // 
             // txtNumero
             // 
@@ -80,8 +80,8 @@
             this.txtNumero.Location = new System.Drawing.Point(52, 378);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(260, 22);
-            this.txtNumero.TabIndex = 5;
-            this.txtNumero.TextChanged += new System.EventHandler(this.txtNumero_TextChanged);
+            this.txtNumero.TabIndex = 1;
+            this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
             // 
             // btnCancelar
             // 
@@ -93,7 +93,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(197, 527);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(133, 51);
-            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.TabIndex = 5;
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -121,7 +121,7 @@
             this.btnEscolherFoto.Location = new System.Drawing.Point(656, 407);
             this.btnEscolherFoto.Name = "btnEscolherFoto";
             this.btnEscolherFoto.Size = new System.Drawing.Size(195, 51);
-            this.btnEscolherFoto.TabIndex = 10;
+            this.btnEscolherFoto.TabIndex = 3;
             this.btnEscolherFoto.UseVisualStyleBackColor = false;
             this.btnEscolherFoto.Click += new System.EventHandler(this.button1_Click);
             // 

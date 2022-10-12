@@ -100,9 +100,15 @@ namespace urnaEletronicaTCC
             }
         }
 
-        private void txtNumero_TextChanged(object sender, EventArgs e)
-        {
+    
 
+        private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("este campo aceita somente numeros positivos");
+            }
         }
     }
 }

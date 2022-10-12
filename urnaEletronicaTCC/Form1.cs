@@ -80,5 +80,11 @@ namespace urnaEletronicaTCC
         {
             
         }
+
+        private void btnApuracao_Click(object sender, EventArgs e)
+        {
+            frmApuracao apuracao = new frmApuracao();
+            apuracao.ShowDialog();
+        }
     }
 }

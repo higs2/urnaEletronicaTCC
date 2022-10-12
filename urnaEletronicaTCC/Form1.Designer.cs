@@ -100,6 +100,7 @@
             this.btnApuracao.Size = new System.Drawing.Size(106, 47);
             this.btnApuracao.TabIndex = 11;
             this.btnApuracao.UseVisualStyleBackColor = true;
+            this.btnApuracao.Click += new System.EventHandler(this.btnApuracao_Click);
             // 
             // btnVotacao
             // 

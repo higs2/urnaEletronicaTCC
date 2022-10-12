@@ -146,3 +146,4 @@ C:\PROJETO\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.cspro
 C:\PROJETO\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.csproj.CopyComplete
 C:\PROJETO\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.exe
 C:\PROJETO\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.pdb
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmApuracao.resources
