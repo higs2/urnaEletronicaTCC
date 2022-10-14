@@ -96,7 +96,8 @@ namespace urnaEletronicaTCC
         {
             if (MessageBox.Show("Deseja cancelar o cadastro?","Cancelar",MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
             {
-                Application.Exit();
+                this.Dispose();
+            
             }
         }
 

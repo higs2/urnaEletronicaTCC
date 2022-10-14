@@ -36,6 +36,7 @@ namespace urnaEletronicaTCC
                 
                 dgvCandidato.DataSource = cadastroController.exibirCandidatos();
                 dgvCandidato.Refresh();
+                
             });
         }
         
@@ -85,6 +86,11 @@ namespace urnaEletronicaTCC
         {
             frmApuracao apuracao = new frmApuracao();
             apuracao.ShowDialog();
+        }
+
+        private void btnZerarCandidatos_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -78,6 +78,7 @@
             this.btnZerarCandidatos.TabIndex = 13;
             this.btnZerarCandidatos.Text = "Zerar Candidatos";
             this.btnZerarCandidatos.UseVisualStyleBackColor = true;
+            this.btnZerarCandidatos.Click += new System.EventHandler(this.btnZerarCandidatos_Click);
             // 
             // btnZerarVotacao
             // 
