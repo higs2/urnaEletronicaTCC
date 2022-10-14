@@ -30,6 +30,7 @@ namespace urnaEletronicaTCC
         public frmUrna()
         {
             InitializeComponent();
+            this.KeyPreview = true;
         }
         MySqlConnection conexao = new MySqlConnection();
         public string digitoConcatenadao;
@@ -176,6 +177,8 @@ namespace urnaEletronicaTCC
             pbFoto.Image = null;
             numeros = null;
 
+            
+
         }
 
         private void btnBranco_Click(object sender, EventArgs e)
@@ -190,13 +193,13 @@ namespace urnaEletronicaTCC
 
         private void frmUrna_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
+         
 
             switch (e.KeyChar)
             {
                 case (char)48: 
                     txt1.Text = txt1.Text + "0";
-                  
+                    
                     break;
 
                 case (char)49:
@@ -232,6 +235,29 @@ namespace urnaEletronicaTCC
                 default:
 
                     break;
+            }
+        }
+
+        private void frmUrna_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void txt2_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.NumPad0)
+            {
+                e.Handled = true;
+                txt1.Clear();
+                txt2.Clear();
+
+                txtNome.Clear();
+                txtCurso.Clear();
+                pbFoto.Image = null;
+                numeros = null;
+                txt1.Focus();
+                
             }
         }
     }

@@ -240,6 +240,7 @@
             this.txt2.Size = new System.Drawing.Size(43, 29);
             this.txt2.TabIndex = 1;
             this.txt2.TextChanged += new System.EventHandler(this.txt2_TextChanged);
+            this.txt2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt2_KeyDown);
             // 
             // pbFoto
             // 
@@ -298,7 +299,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Load += new System.EventHandler(this.frmUrna_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmUrna_KeyPress);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmUrna_KeyDown);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.ResumeLayout(false);
