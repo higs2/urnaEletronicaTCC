@@ -13,6 +13,8 @@ namespace urnaEletronicaTCC.Models
         public string numero { get; set; }
         public string curso { get; set; }
         public string foto { get; set; }
+        
+
 
         public Cadastro() { }
 
@@ -29,7 +31,7 @@ namespace urnaEletronicaTCC.Models
             numero = _numero;
             curso = _curso;
             foto = _foto;
-
+            
         }
 
     }

@@ -38,6 +38,7 @@
             this.txtImage = new System.Windows.Forms.TextBox();
             this.btnEscolherFoto = new System.Windows.Forms.Button();
             this.pbFoto = new System.Windows.Forms.PictureBox();
+            this.txtVotos = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,12 +135,23 @@
             this.pbFoto.TabIndex = 11;
             this.pbFoto.TabStop = false;
             // 
+            // txtVotos
+            // 
+            this.txtVotos.Enabled = false;
+            this.txtVotos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVotos.Location = new System.Drawing.Point(513, 329);
+            this.txtVotos.Name = "txtVotos";
+            this.txtVotos.Size = new System.Drawing.Size(103, 29);
+            this.txtVotos.TabIndex = 13;
+            this.txtVotos.Visible = false;
+            // 
             // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.tela2;
             this.ClientSize = new System.Drawing.Size(883, 604);
+            this.Controls.Add(this.txtVotos);
             this.Controls.Add(this.txtImage);
             this.Controls.Add(this.pbFoto);
             this.Controls.Add(this.btnEscolherFoto);
@@ -171,5 +183,6 @@
         private System.Windows.Forms.TextBox txtImage;
         private System.Windows.Forms.Button btnEscolherFoto;
         private System.Windows.Forms.PictureBox pbFoto;
+        private System.Windows.Forms.TextBox txtVotos;
     }
 }

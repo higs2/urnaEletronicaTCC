@@ -60,7 +60,7 @@ namespace urnaEletronicaTCC.Controllers
             try
             {
                 conexao.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT id_user,nome,numero,curso,foto FROM cadastro", conexao);
+                MySqlCommand cmd = new MySqlCommand("SELECT id_user,nome,numero,curso,foto,votos FROM cadastro", conexao);
              
                 
                 MySqlDataReader reader = cmd.ExecuteReader();

@@ -163,7 +163,16 @@ namespace urnaEletronicaTCC
 
         private void btnConfirma_Click(object sender, EventArgs e)
         {
-
+            conexao = Conexao.Conectar();
+            MySqlCommand cmd = new MySqlCommand("UPDATE cadastro SET votos=votos+1 WHERER numero=@numero");
+            cmd.Parameters.AddWithValue("@numero", txt1.Text + txt2.Text);
+            cmd.ExecuteNonQuery();
+            if(!string.IsNullOrEmpty(txt1.Text) || !string.IsNullOrEmpty(txt2.Text))
+            {
+                
+                frmFim fim = new frmFim();
+                fim.ShowDialog();
+            }
            
         }
 

@@ -148,3 +148,4 @@ C:\PROJETO\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.exe
 C:\PROJETO\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.pdb
 C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmApuracao.resources
 C:\PROJETO\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmApuracao.resources
+C:\Users\higor\OneDrive\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmFim.resources
