@@ -163,15 +163,30 @@ namespace urnaEletronicaTCC
 
         private void btnConfirma_Click(object sender, EventArgs e)
         {
-            conexao = Conexao.Conectar();
-            MySqlCommand cmd = new MySqlCommand("UPDATE cadastro SET votos=votos+1 WHERER numero=@numero");
-            cmd.Parameters.AddWithValue("@numero", txt1.Text + txt2.Text);
-            cmd.ExecuteNonQuery();
-            if(!string.IsNullOrEmpty(txt1.Text) || !string.IsNullOrEmpty(txt2.Text))
+            try
             {
-                
-                frmFim fim = new frmFim();
-                fim.ShowDialog();
+                Cadastro voto = new Cadastro(txtNome.Text, txt1.Text + txt2.Text, txtCurso.Text, txtFoto.Text);
+                conexao = Conexao.Conectar();
+
+                CadastroController cadastro = new CadastroController();
+                DataTable dt = new DataTable();
+               
+                if (!string.IsNullOrEmpty(txt1.Text) || !string.IsNullOrEmpty(txt2.Text))
+                {
+                    dt = cadastro.confirmarVoto(voto);
+
+                    frmFim fim = new frmFim();
+                    fim.ShowDialog();
+                }
+            }
+            catch (Exception)
+            {
+
+                return;
+            }
+            finally
+            {
+                conexao.Clone();
             }
            
         }

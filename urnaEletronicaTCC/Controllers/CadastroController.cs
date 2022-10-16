@@ -82,7 +82,6 @@ namespace urnaEletronicaTCC.Controllers
         }
 
 
-        //teste
         public DataTable exibirDados(Cadastro dados)
         {
             DataTable dt = new DataTable();
@@ -92,6 +91,33 @@ namespace urnaEletronicaTCC.Controllers
                 conexao.Open();
                 MySqlCommand cmd = new MySqlCommand("SELECT * FROM cadastro WHERE numero=@numero", conexao);
                 cmd.Parameters.AddWithValue("@numero", dados.numero);
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+                dt.Load(reader);
+                return dt;
+
+            }
+            catch (Exception)
+            {
+
+                return dt;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+        }
+
+        public DataTable confirmarVoto(Cadastro voto)
+        {
+            DataTable dt = new DataTable();
+
+            try
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("UPDATE cadastro SET votos=votos+1 WHERE numero=@numero", conexao);
+                cmd.Parameters.AddWithValue("@numero", voto.numero);
 
                 MySqlDataReader reader = cmd.ExecuteReader();
                 dt.Load(reader);
