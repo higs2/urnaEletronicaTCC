@@ -121,7 +121,7 @@ namespace urnaEletronicaTCC
         {
             try
             {
-                Cadastro dados = new Cadastro(txtNome.Text, txt1.Text + txt2.Text, txtCurso.Text, txtFoto.Text);
+                Cadastro dados = new Cadastro(lblNome.Text, txt1.Text + txt2.Text, lblCurso.Text, txtFoto.Text);
                 conexao = Conexao.Conectar();
 
                 CadastroController cadastro = new CadastroController();
@@ -132,17 +132,21 @@ namespace urnaEletronicaTCC
 
                 // dt.Rows[0]["curso"].ToString();             
 
+                lblNome2.Visible = true;
+                lblCurso2.Visible = true;
+                lblNome.Visible = true;
+                lblCurso.Visible = true;
                 while (cont <= dt.Rows.Count)
                 {
 
                     dataRow = dt.Rows[cont];
-                    txtNome.Text = dataRow["nome"].ToString();
-                    txtCurso.Text = dataRow["curso"].ToString();
+                    lblNome.Text = dataRow["nome"].ToString();
+                    lblCurso.Text = dataRow["curso"].ToString();
                     pbFoto.Image = Image.FromFile(dataRow["foto"].ToString());
 
                     cont++;
+                            
                 }
-
 
 
             }
@@ -165,7 +169,7 @@ namespace urnaEletronicaTCC
         {
             try
             {
-                Cadastro voto = new Cadastro(txtNome.Text, txt1.Text + txt2.Text, txtCurso.Text, txtFoto.Text);
+                Cadastro voto = new Cadastro(lblNome.Text, txt1.Text + txt2.Text, lblCurso.Text, txtFoto.Text);
                 conexao = Conexao.Conectar();
 
                 CadastroController cadastro = new CadastroController();
@@ -175,8 +179,10 @@ namespace urnaEletronicaTCC
                 {
                     dt = cadastro.confirmarVoto(voto);
 
-                    frmFim fim = new frmFim();
-                    fim.ShowDialog();
+                  //  frmFim fim = new frmFim();
+                   // fim.ShowDialog();
+                   panel1.Visible = true;
+                   
                 }
             }
             catch (Exception)
@@ -196,11 +202,13 @@ namespace urnaEletronicaTCC
             txt1.Clear();
             txt2.Clear();
           
-            txtNome.Clear();
-            txtCurso.Clear();
+            lblNome.Text = "";
+            lblCurso.Text = "";
+            lblCurso2.Visible = false;
+            lblNome2.Visible = false;
             pbFoto.Image = null;
             numeros = null;
-
+            
             
 
         }
@@ -276,13 +284,23 @@ namespace urnaEletronicaTCC
                 txt1.Clear();
                 txt2.Clear();
 
-                txtNome.Clear();
-                txtCurso.Clear();
+                lblNome.Text = "";
+                lblCurso.Text = "";
                 pbFoto.Image = null;
                 numeros = null;
                 txt1.Focus();
                 
             }
+        }
+
+        private void lblNome2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCurso2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

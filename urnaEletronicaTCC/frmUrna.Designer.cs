@@ -46,11 +46,19 @@
             this.txt1 = new System.Windows.Forms.TextBox();
             this.txt2 = new System.Windows.Forms.TextBox();
             this.pbFoto = new System.Windows.Forms.PictureBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtCurso = new System.Windows.Forms.TextBox();
             this.txtFoto = new System.Windows.Forms.TextBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblCurso = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblNome2 = new System.Windows.Forms.Label();
+            this.lblCurso2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn7
@@ -180,7 +188,7 @@
             this.groupBox1.Controls.Add(this.btn5);
             this.groupBox1.Controls.Add(this.btn8);
             this.groupBox1.Controls.Add(this.btn1);
-            this.groupBox1.Location = new System.Drawing.Point(523, 213);
+            this.groupBox1.Location = new System.Drawing.Point(606, 223);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(366, 341);
             this.groupBox1.TabIndex = 14;
@@ -225,69 +233,160 @@
             // 
             // txt1
             // 
-            this.txt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1.Location = new System.Drawing.Point(279, 285);
+            this.txt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt1.Location = new System.Drawing.Point(183, 304);
             this.txt1.Name = "txt1";
-            this.txt1.Size = new System.Drawing.Size(43, 29);
+            this.txt1.Size = new System.Drawing.Size(43, 31);
             this.txt1.TabIndex = 0;
             this.txt1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt1_KeyDown);
             // 
             // txt2
             // 
-            this.txt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt2.Location = new System.Drawing.Point(330, 285);
+            this.txt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt2.Location = new System.Drawing.Point(232, 304);
             this.txt2.Name = "txt2";
-            this.txt2.Size = new System.Drawing.Size(43, 29);
+            this.txt2.Size = new System.Drawing.Size(43, 31);
             this.txt2.TabIndex = 1;
             this.txt2.TextChanged += new System.EventHandler(this.txt2_TextChanged);
             this.txt2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt2_KeyDown);
             // 
             // pbFoto
             // 
-            this.pbFoto.Location = new System.Drawing.Point(86, 37);
+            this.pbFoto.Location = new System.Drawing.Point(355, 223);
             this.pbFoto.Name = "pbFoto";
             this.pbFoto.Size = new System.Drawing.Size(245, 215);
             this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFoto.TabIndex = 28;
             this.pbFoto.TabStop = false;
             // 
-            // txtNome
-            // 
-            this.txtNome.Enabled = false;
-            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(186, 423);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(187, 31);
-            this.txtNome.TabIndex = 31;
-            // 
-            // txtCurso
-            // 
-            this.txtCurso.Enabled = false;
-            this.txtCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurso.Location = new System.Drawing.Point(186, 491);
-            this.txtCurso.Name = "txtCurso";
-            this.txtCurso.Size = new System.Drawing.Size(187, 31);
-            this.txtCurso.TabIndex = 32;
-            // 
             // txtFoto
             // 
             this.txtFoto.Enabled = false;
             this.txtFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFoto.Location = new System.Drawing.Point(337, 136);
+            this.txtFoto.Location = new System.Drawing.Point(355, 186);
             this.txtFoto.Name = "txtFoto";
             this.txtFoto.Size = new System.Drawing.Size(116, 31);
             this.txtFoto.TabIndex = 33;
             this.txtFoto.Visible = false;
             // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(188, 367);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(86, 31);
+            this.lblNome.TabIndex = 34;
+            this.lblNome.Text = "Nome";
+            this.lblNome.Visible = false;
+            // 
+            // lblCurso
+            // 
+            this.lblCurso.AutoSize = true;
+            this.lblCurso.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurso.Location = new System.Drawing.Point(188, 433);
+            this.lblCurso.Name = "lblCurso";
+            this.lblCurso.Size = new System.Drawing.Size(87, 31);
+            this.lblCurso.TabIndex = 35;
+            this.lblCurso.Text = "Curso";
+            this.lblCurso.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(41, 186);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 31);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Seu voto para:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(177, 244);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 31);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "SIP";
+            // 
+            // lblNome2
+            // 
+            this.lblNome2.AutoSize = true;
+            this.lblNome2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblNome2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome2.Location = new System.Drawing.Point(51, 367);
+            this.lblNome2.Name = "lblNome2";
+            this.lblNome2.Size = new System.Drawing.Size(94, 31);
+            this.lblNome2.TabIndex = 38;
+            this.lblNome2.Text = "Nome:";
+            this.lblNome2.Visible = false;
+            this.lblNome2.Click += new System.EventHandler(this.lblNome2_Click);
+            // 
+            // lblCurso2
+            // 
+            this.lblCurso2.AutoSize = true;
+            this.lblCurso2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblCurso2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurso2.Location = new System.Drawing.Point(51, 433);
+            this.lblCurso2.Name = "lblCurso2";
+            this.lblCurso2.Size = new System.Drawing.Size(95, 31);
+            this.lblCurso2.TabIndex = 39;
+            this.lblCurso2.Text = "Curso:";
+            this.lblCurso2.Visible = false;
+            this.lblCurso2.Click += new System.EventHandler(this.lblCurso2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(313, 219);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(263, 135);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "FIM";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(966, 584);
+            this.panel1.TabIndex = 41;
+            this.panel1.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(798, 509);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(111, 31);
+            this.label4.TabIndex = 41;
+            this.label4.Text = "VOTOU";
+            // 
             // frmUrna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.fundo_urna_god;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(967, 586);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lblCurso2);
+            this.Controls.Add(this.lblNome2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCurso);
+            this.Controls.Add(this.lblNome);
             this.Controls.Add(this.txtFoto);
-            this.Controls.Add(this.txtCurso);
-            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.pbFoto);
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.txt1);
@@ -302,6 +401,8 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmUrna_KeyDown);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,8 +427,15 @@
         private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.TextBox txt2;
         private System.Windows.Forms.PictureBox pbFoto;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtCurso;
         private System.Windows.Forms.TextBox txtFoto;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblCurso;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNome2;
+        private System.Windows.Forms.Label lblCurso2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
     }
 }
