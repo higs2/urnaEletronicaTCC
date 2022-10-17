@@ -121,14 +121,14 @@
   <data name="botao cadastrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botao cadastrar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FOTOESCOLHA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FOTOESCOLHA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="fundo urna god" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundo urna god.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VOTACAO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VOTACAO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FOTOESCOLHA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FOTOESCOLHA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tela5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tela5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tendencias-de-ti-que-voce-deve-ficar-de-olho" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tendencias-de-ti-que-voce-deve-ficar-de-olho.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,9 +145,6 @@
   <data name="botao cadastrar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botao cadastrar1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CADASTRAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CADASTRAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Logo Mercurio Eleitoral" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo Mercurio Eleitoral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,13 +154,19 @@
   <data name="BOTAO CANCELAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BOTAO CANCELAR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo Mercurio Eleitoral1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo Mercurio Eleitoral1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VOTACAO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VOTACAO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tela2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tela2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tela5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tela5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logo Mercurio Eleitoral1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Mercurio Eleitoral1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CADASTRAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CADASTRAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telaurnagodagod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telaurnagodagod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

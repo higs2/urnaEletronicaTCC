@@ -289,7 +289,10 @@ namespace urnaEletronicaTCC
                 pbFoto.Image = null;
                 numeros = null;
                 txt1.Focus();
-                
+
+                lblNome2.Text = "";
+                lblCurso2.Text = "";
+
             }
         }
 

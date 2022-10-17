@@ -203,6 +203,16 @@ namespace urnaEletronicaTCC.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap telaurnagodagod {
+            get {
+                object obj = ResourceManager.GetObject("telaurnagodagod", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tendencias_de_ti_que_voce_deve_ficar_de_olho {
             get {
                 object obj = ResourceManager.GetObject("tendencias-de-ti-que-voce-deve-ficar-de-olho", resourceCulture);

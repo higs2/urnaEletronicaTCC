@@ -234,7 +234,7 @@
             // txt1
             // 
             this.txt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1.Location = new System.Drawing.Point(183, 304);
+            this.txt1.Location = new System.Drawing.Point(183, 375);
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(43, 31);
             this.txt1.TabIndex = 0;
@@ -243,7 +243,7 @@
             // txt2
             // 
             this.txt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt2.Location = new System.Drawing.Point(232, 304);
+            this.txt2.Location = new System.Drawing.Point(232, 375);
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(43, 31);
             this.txt2.TabIndex = 1;
@@ -252,7 +252,8 @@
             // 
             // pbFoto
             // 
-            this.pbFoto.Location = new System.Drawing.Point(355, 223);
+            this.pbFoto.BackColor = System.Drawing.Color.White;
+            this.pbFoto.Location = new System.Drawing.Point(355, 304);
             this.pbFoto.Name = "pbFoto";
             this.pbFoto.Size = new System.Drawing.Size(245, 215);
             this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -263,7 +264,7 @@
             // 
             this.txtFoto.Enabled = false;
             this.txtFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFoto.Location = new System.Drawing.Point(355, 186);
+            this.txtFoto.Location = new System.Drawing.Point(355, 257);
             this.txtFoto.Name = "txtFoto";
             this.txtFoto.Size = new System.Drawing.Size(116, 31);
             this.txtFoto.TabIndex = 33;
@@ -272,9 +273,9 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblNome.BackColor = System.Drawing.Color.White;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(188, 367);
+            this.lblNome.Location = new System.Drawing.Point(188, 439);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(86, 31);
             this.lblNome.TabIndex = 34;
@@ -284,9 +285,9 @@
             // lblCurso
             // 
             this.lblCurso.AutoSize = true;
-            this.lblCurso.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblCurso.BackColor = System.Drawing.Color.White;
             this.lblCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurso.Location = new System.Drawing.Point(188, 433);
+            this.lblCurso.Location = new System.Drawing.Point(188, 505);
             this.lblCurso.Name = "lblCurso";
             this.lblCurso.Size = new System.Drawing.Size(87, 31);
             this.lblCurso.TabIndex = 35;
@@ -296,9 +297,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 186);
+            this.label1.Location = new System.Drawing.Point(41, 257);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 31);
             this.label1.TabIndex = 36;
@@ -307,9 +308,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(177, 244);
+            this.label2.Location = new System.Drawing.Point(177, 315);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 31);
             this.label2.TabIndex = 37;
@@ -318,9 +319,9 @@
             // lblNome2
             // 
             this.lblNome2.AutoSize = true;
-            this.lblNome2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblNome2.BackColor = System.Drawing.Color.White;
             this.lblNome2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome2.Location = new System.Drawing.Point(51, 367);
+            this.lblNome2.Location = new System.Drawing.Point(51, 439);
             this.lblNome2.Name = "lblNome2";
             this.lblNome2.Size = new System.Drawing.Size(94, 31);
             this.lblNome2.TabIndex = 38;
@@ -331,9 +332,9 @@
             // lblCurso2
             // 
             this.lblCurso2.AutoSize = true;
-            this.lblCurso2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblCurso2.BackColor = System.Drawing.Color.White;
             this.lblCurso2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurso2.Location = new System.Drawing.Point(51, 433);
+            this.lblCurso2.Location = new System.Drawing.Point(51, 505);
             this.lblCurso2.Name = "lblCurso2";
             this.lblCurso2.Size = new System.Drawing.Size(95, 31);
             this.lblCurso2.TabIndex = 39;
@@ -369,7 +370,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(943, 562);
+            this.panel1.Size = new System.Drawing.Size(170, 95);
             this.panel1.TabIndex = 41;
             this.panel1.Visible = false;
             // 
@@ -378,8 +379,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(967, 586);
-            this.Controls.Add(this.panel1);
+            this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.telaurnagodagod;
+            this.ClientSize = new System.Drawing.Size(993, 648);
             this.Controls.Add(this.lblCurso2);
             this.Controls.Add(this.lblNome2);
             this.Controls.Add(this.label2);
@@ -391,6 +392,7 @@
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.txt1);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
