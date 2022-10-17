@@ -25,26 +25,14 @@ namespace urnaEletronicaTCC
         {
             frmUrna urna = new frmUrna();
             urna.ShowDialog();
-            dgvCandidato.BeginInvoke((MethodInvoker)delegate ()
-            {
-
-                dgvCandidato.DataSource = cadastroController.exibirCandidatos();
-                dgvCandidato.Refresh();
-
-            });
+            
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             frmCadastro cadastro = new frmCadastro();
             cadastro.ShowDialog();
-            dgvCandidato.BeginInvoke((MethodInvoker)delegate ()
-            {
-                
-                dgvCandidato.DataSource = cadastroController.exibirCandidatos();
-                dgvCandidato.Refresh();
-                
-            });
+           
         }
         
 
@@ -55,23 +43,7 @@ namespace urnaEletronicaTCC
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            dgvCandidato.DataSource = cadastroController.exibirCandidatos();
-            
-            dgvCandidato.Columns[0].Width = 20;
-            dgvCandidato.Columns[1].Width = 100;
-            dgvCandidato.Columns[2].Width = 40;
-            dgvCandidato.Columns[3].Width = 150;
-            dgvCandidato.Columns[4].Width = 200;
-            dgvCandidato.Columns[5].Width = 40;
-
-
-            dgvCandidato.Columns[0].HeaderText = "ID";
-            dgvCandidato.Columns[1].HeaderText = "Nome";
-            dgvCandidato.Columns[2].HeaderText = "Numero";
-            dgvCandidato.Columns[3].HeaderText = "Curso";
-            dgvCandidato.Columns[4].HeaderText = "Foto";
-            dgvCandidato.Columns[5].HeaderText = "Votos";
-
+           
 
         }
 

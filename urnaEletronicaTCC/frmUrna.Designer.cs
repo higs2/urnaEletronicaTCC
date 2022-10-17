@@ -54,8 +54,8 @@
             this.lblNome2 = new System.Windows.Forms.Label();
             this.lblCurso2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.panel1.SuspendLayout();
@@ -352,16 +352,6 @@
             this.label3.TabIndex = 40;
             this.label3.Text = "FIM";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(966, 584);
-            this.panel1.TabIndex = 41;
-            this.panel1.Visible = false;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -372,6 +362,16 @@
             this.label4.Size = new System.Drawing.Size(111, 31);
             this.label4.TabIndex = 41;
             this.label4.Text = "VOTOU";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(943, 562);
+            this.panel1.TabIndex = 41;
+            this.panel1.Visible = false;
             // 
             // frmUrna
             // 
@@ -435,7 +435,7 @@
         private System.Windows.Forms.Label lblNome2;
         private System.Windows.Forms.Label lblCurso2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel1;
     }
 }
