@@ -27,6 +27,7 @@ namespace urnaEletronicaTCC
 
     public partial class frmUrna : Form
     {
+        Boolean keyCancel = false;
         public frmUrna()
         {
             InitializeComponent();
@@ -38,63 +39,7 @@ namespace urnaEletronicaTCC
 
         private void frmUrna_Load(object sender, EventArgs e)
         {
-
-        }
-
-
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            registrarDigito("1");
-
-
-
-        }
-
-        private void btn2_Click(object sender, EventArgs e)
-        {
-            registrarDigito("2");
-        }
-
-
-        private void btn3_Click(object sender, EventArgs e)
-        {
-
-            registrarDigito("3");
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            registrarDigito("4");
-        }
-
-        private void btn5_Click(object sender, EventArgs e)
-        {
-            registrarDigito("5");
-        }
-
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            registrarDigito("6");
-        }
-
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            registrarDigito("7");
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            registrarDigito("8");
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            registrarDigito("9");
-        }
-
-        private void btn0_Click(object sender, EventArgs e)
-        {
-            registrarDigito("0");
+            txt1.Focus();
         }
 
 
@@ -197,17 +142,22 @@ namespace urnaEletronicaTCC
            
         }
 
-        private void btnCorrigir_Click(object sender, EventArgs e)
+        public void limpar()
         {
             txt1.Clear();
             txt2.Clear();
-          
+
             lblNome.Text = "";
             lblCurso.Text = "";
             lblCurso2.Visible = false;
             lblNome2.Visible = false;
             pbFoto.Image = null;
             numeros = null;
+
+        }
+        private void btnCorrigir_Click(object sender, EventArgs e)
+        {
+            limpar();
             
             
 
@@ -220,54 +170,14 @@ namespace urnaEletronicaTCC
 
         private void txt1_KeyDown(object sender, KeyEventArgs e)
         {
-
+                       
         }
 
         private void frmUrna_KeyPress(object sender, KeyPressEventArgs e)
         {
          
 
-            switch (e.KeyChar)
-            {
-                case (char)48: 
-                    txt1.Text = txt1.Text + "0";
-                    
-                    break;
-
-                case (char)49:
-                    txt1.Text = txt1.Text + "1";
-                    break;
-                case (char)50:
-                    txt1.Text = txt1.Text + "2";
-                    break;
-                case (char)51:
-                    txt1.Text = txt1.Text + "3";
-                    break;
-
-                case (char)52:
-                    txt1.Text = txt1.Text + "4";
-                    break;
-                case (char)53:
-                    txt1.Text = txt1.Text + "5";
-                    break;
-                case (char)54:
-                    txt1.Text = txt1.Text + "6";
-                    break;
-
-                case (char)55:
-                    txt1.Text = txt1.Text + "7";
-                    break;
-                case (char)56:
-                    txt1.Text = txt1.Text + "8";
-                    break;
-                case (char)57:
-                    txt1.Text = txt1.Text + "9";
-                    break;
-
-                default:
-
-                    break;
-            }
+            
         }
 
         private void frmUrna_KeyDown(object sender, KeyEventArgs e)
@@ -304,6 +214,62 @@ namespace urnaEletronicaTCC
         private void lblCurso2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '.')
+            {
+                e.Handled = true;
+                txt1.Clear();
+                txt2.Clear();
+                txt1.Focus();
+                limpar();
+            }
+            else
+            {
+                e.Handled = false;
+                txt2.Focus();
+            }
+        }
+
+        private void txt1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.OemPeriod)
+            {
+                txt1.Clear();
+                txt2.Clear();
+                txt1.Focus();
+            }
+        }
+
+        private void txt2_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.OemPeriod)
+            {
+                txt1.Clear();
+                txt2.Clear();
+                txt1.Focus();
+                
+            }
+        }
+
+        private void txt2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '.')
+            {
+                e.Handled = true;
+                txt1.Clear();
+                txt2.Clear();
+                txt1.Focus();
+                limpar();
+            }
+            else
+            {
+                e.Handled = false;
+
+                txt2.Focus();
+            }
         }
     }
 }
