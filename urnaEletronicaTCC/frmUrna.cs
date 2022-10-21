@@ -28,6 +28,10 @@ namespace urnaEletronicaTCC
     public partial class frmUrna : Form
     {
         Boolean keyCancel = false;
+
+        
+
+       
         public frmUrna()
         {
             InitializeComponent();
@@ -41,25 +45,6 @@ namespace urnaEletronicaTCC
         {
             txt1.Focus();
         }
-
-
-        private void registrarDigito(string digito)
-        {
-
-            if (string.IsNullOrEmpty(txt1.Text))
-            {
-                txt1.Text = digito;
-              
-
-
-            } else if (!string.IsNullOrEmpty(txt1.Text)) {
-                txt2.Text = digito;
-               
-            }
-
-
-        }
-
 
 
         private void txt2_TextChanged(object sender, EventArgs e)
@@ -107,8 +92,30 @@ namespace urnaEletronicaTCC
 
             }
         }
-       
-           
+
+        public void limpar()
+        {
+            txt1.Clear();
+            txt2.Clear();
+
+            lblNome.Text = "";
+            lblCurso.Text = "";
+            lblCurso2.Visible = false;
+            lblNome2.Visible = false;
+            pbFoto.Image = null;
+            numeros = null;
+
+
+        }
+
+        private void AcaoFinal(Object myObject, EventArgs myEventArgs)
+        {
+                
+            timer1.Stop();
+            timer1.Enabled = false;
+            panel1.Visible = false;
+        }
+
 
         private void btnConfirma_Click(object sender, EventArgs e)
         {
@@ -124,10 +131,12 @@ namespace urnaEletronicaTCC
                 {
                     dt = cadastro.confirmarVoto(voto);
 
-                  //  frmFim fim = new frmFim();
-                   // fim.ShowDialog();
-                   panel1.Visible = true;
-                   
+                    //frmFim fim = new frmFim();
+                    //fim.ShowDialog();
+                    panel1.Visible = true;
+                    //timer1.Interval = 2000;
+                    
+
                 }
             }
             catch (Exception)
@@ -142,25 +151,12 @@ namespace urnaEletronicaTCC
            
         }
 
-        public void limpar()
-        {
-            txt1.Clear();
-            txt2.Clear();
-
-            lblNome.Text = "";
-            lblCurso.Text = "";
-            lblCurso2.Visible = false;
-            lblNome2.Visible = false;
-            pbFoto.Image = null;
-            numeros = null;
-
-        }
         private void btnCorrigir_Click(object sender, EventArgs e)
         {
             limpar();
-            
-            
 
+            timer1.Stop();
+            timer1.Enabled = false;
         }
 
         private void btnBranco_Click(object sender, EventArgs e)
@@ -188,22 +184,6 @@ namespace urnaEletronicaTCC
         private void txt2_KeyDown(object sender, KeyEventArgs e)
         {
 
-            if (e.KeyCode == Keys.NumPad0)
-            {
-                e.Handled = true;
-                txt1.Clear();
-                txt2.Clear();
-
-                lblNome.Text = "";
-                lblCurso.Text = "";
-                pbFoto.Image = null;
-                numeros = null;
-                txt1.Focus();
-
-                lblNome2.Text = "";
-                lblCurso2.Text = "";
-
-            }
         }
 
         private void lblNome2_Click(object sender, EventArgs e)
@@ -252,6 +232,39 @@ namespace urnaEletronicaTCC
                 txt1.Focus();
                 
             }
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                try
+                {
+                    Cadastro voto = new Cadastro(lblNome.Text, txt1.Text + txt2.Text, lblCurso.Text, txtFoto.Text);
+                    conexao = Conexao.Conectar();
+
+                    CadastroController cadastro = new CadastroController();
+                    DataTable dt = new DataTable();
+
+                    if (!string.IsNullOrEmpty(txt1.Text) || !string.IsNullOrEmpty(txt2.Text))
+                    {
+                        dt = cadastro.confirmarVoto(voto);
+
+                        //  frmFim fim = new frmFim();
+                        // fim.ShowDialog();
+                        panel1.Visible = true;
+                        SoundPlayer s = new SoundPlayer(Properties.Resources.urna);
+                        s.Play();
+                    }
+                    
+                }
+                catch (Exception)
+                {
+
+                    return;
+                }
+                finally
+                {
+                    conexao.Clone();
+                }
+            }
         }
 
         private void txt2_KeyPress(object sender, KeyPressEventArgs e)
@@ -270,6 +283,8 @@ namespace urnaEletronicaTCC
 
                 txt2.Focus();
             }
+
+
         }
     }
 }

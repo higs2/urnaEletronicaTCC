@@ -214,5 +214,107 @@
   <ItemGroup>
     <None Include="Resources\telaurnagodagod.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\audio\urna.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\8f62cba2944bead08a1c4987ca1825b8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\09-the-100-year-evolution-of-9-kitchen-appliances-stove_resize_md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\31c9668127c2b883d1d6e42ca8e73c96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\960x720-11-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\3655778.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\010180210809-riscos-interfaces-neurais-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\anti-mofo-preventivo-allchem-900ml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Artificial-intelligence-amico-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\bg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\cinema-CRED-iStock_Roman-Valiev.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\curaplantasbanner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\da.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\daf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\densidade-o-que-e-como-e-formada-forma-de-calcular-e-medidas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\dia-mundial-da-saude-mental.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\DST-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\ferramentas-quimicas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Hero_Shot_Avatars_copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\hwkb17_028.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\i332959.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\imagem-site-combate-ao-cancer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\liptint-amp_card-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Narcoticos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\PANDEMIA-X-ENDEMIA--1024x766.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\processos-de-despoluicao-2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\produtora-de-sorvete-soft-psoft-500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Projeto-de-Energia-Solar-Residencial-Quanto-Custa-4-Erros-Comuns-752x440.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\queimaduras_1-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\quimica-forense.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
