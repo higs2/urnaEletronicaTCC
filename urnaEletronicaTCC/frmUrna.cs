@@ -252,6 +252,12 @@ namespace urnaEletronicaTCC
                         panel1.Visible = true;
                         SoundPlayer s = new SoundPlayer(Properties.Resources.urna);
                         s.Play();
+
+                        timer1.Tick += new EventHandler(AcaoFinal);
+                        timer1.Interval = 5000;
+                        timer1.Enabled = true;
+                        timer1.Start();
+                        limpar();
                     }
                     
                 }
