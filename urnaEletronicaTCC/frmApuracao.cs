@@ -35,18 +35,16 @@ namespace urnaEletronicaTCC
             dgvCandidato.DataSource = cadastroController.exibirCandidatos();
 
            
-            dgvCandidato.Columns[0].Width = 150;
+            dgvCandidato.Columns[0].Width = 160;
             dgvCandidato.Columns[1].Width = 40;
             dgvCandidato.Columns[2].Width = 150;
-      
-            dgvCandidato.Columns[3].Width = 60;
-
+            dgvCandidato.Columns[3].Width = 200;
 
            
+
             dgvCandidato.Columns[0].HeaderText = "Nome";
             dgvCandidato.Columns[1].HeaderText = "N°";
             dgvCandidato.Columns[2].HeaderText = "Curso";
-        
             dgvCandidato.Columns[3].HeaderText = "Votos";
         }
     }

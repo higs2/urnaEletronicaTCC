@@ -197,9 +197,10 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1011, 606);
+            this.panel1.Size = new System.Drawing.Size(992, 606);
             this.panel1.TabIndex = 41;
             this.panel1.Visible = false;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // progressBar1
             // 
@@ -231,7 +232,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.telaurnagodagod;
-            this.ClientSize = new System.Drawing.Size(1011, 606);
+            this.ClientSize = new System.Drawing.Size(992, 606);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);

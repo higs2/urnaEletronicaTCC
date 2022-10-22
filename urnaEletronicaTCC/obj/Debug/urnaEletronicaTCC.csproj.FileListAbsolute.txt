@@ -189,3 +189,5 @@ C:\Users\LAB-16\Desktop\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletro
 C:\Users\LAB-16\Desktop\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.csproj.CopyComplete
 C:\Users\LAB-16\Desktop\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.exe
 C:\Users\LAB-16\Desktop\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.pdb
+C:\Users\User\Documents\TCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmApuracao.resources
+C:\Users\User\Documents\TCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmFim.resources

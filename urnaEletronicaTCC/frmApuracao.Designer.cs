@@ -56,9 +56,9 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCandidato.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCandidato.GridColor = System.Drawing.Color.Black;
-            this.dgvCandidato.Location = new System.Drawing.Point(185, 215);
+            this.dgvCandidato.Location = new System.Drawing.Point(33, 215);
             this.dgvCandidato.Name = "dgvCandidato";
-            this.dgvCandidato.Size = new System.Drawing.Size(436, 411);
+            this.dgvCandidato.Size = new System.Drawing.Size(612, 255);
             this.dgvCandidato.TabIndex = 15;
             this.dgvCandidato.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCandidato_CellContentClick);
             // 
@@ -67,7 +67,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.tela3;
-            this.ClientSize = new System.Drawing.Size(784, 638);
+            this.ClientSize = new System.Drawing.Size(784, 493);
             this.Controls.Add(this.dgvCandidato);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
