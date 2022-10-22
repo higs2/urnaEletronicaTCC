@@ -51,6 +51,7 @@ namespace urnaEletronicaTCC
         {
             try
             {
+               
                 Cadastro dados = new Cadastro(lblNome.Text, txt1.Text + txt2.Text, lblCurso.Text, txtFoto.Text);
                 conexao = Conexao.Conectar();
 
@@ -66,6 +67,16 @@ namespace urnaEletronicaTCC
                 lblCurso2.Visible = true;
                 lblNome.Visible = true;
                 lblCurso.Visible = true;
+                groupBox1.Visible = true;
+                if (Convert.ToInt32(txt1.Text + txt2.Text) >= 35)
+                {
+                    lblNulo1.Visible = true;
+                    lblNulo2.Visible = true;
+                    lblNome.Visible = false;
+                    lblCurso.Visible = false;
+                    lblNome2.Visible = false;
+                    lblCurso2.Visible = false;
+                }
                 while (cont <= dt.Rows.Count)
                 {
 
@@ -104,7 +115,7 @@ namespace urnaEletronicaTCC
             lblNome2.Visible = false;
             pbFoto.Image = null;
             numeros = null;
-
+            groupBox1.Visible = false;
 
         }
 
@@ -254,7 +265,7 @@ namespace urnaEletronicaTCC
                         s.Play();
 
                         timer1.Tick += new EventHandler(AcaoFinal);
-                        timer1.Interval = 5000;
+                        timer1.Interval = 10000;
                         timer1.Enabled = true;
                         timer1.Start();
                         limpar();

@@ -37,6 +37,9 @@
             // 
             // dgvCandidato
             // 
+            this.dgvCandidato.AllowUserToAddRows = false;
+            this.dgvCandidato.AllowUserToResizeColumns = false;
+            this.dgvCandidato.AllowUserToResizeRows = false;
             this.dgvCandidato.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(82)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -56,9 +59,9 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCandidato.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCandidato.GridColor = System.Drawing.Color.Black;
-            this.dgvCandidato.Location = new System.Drawing.Point(185, 215);
+            this.dgvCandidato.Location = new System.Drawing.Point(160, 215);
             this.dgvCandidato.Name = "dgvCandidato";
-            this.dgvCandidato.Size = new System.Drawing.Size(436, 411);
+            this.dgvCandidato.Size = new System.Drawing.Size(464, 411);
             this.dgvCandidato.TabIndex = 15;
             this.dgvCandidato.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCandidato_CellContentClick);
             // 

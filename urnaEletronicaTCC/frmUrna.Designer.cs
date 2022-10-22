@@ -43,11 +43,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblNulo1 = new System.Windows.Forms.Label();
+            this.lblNulo2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txt1
@@ -191,22 +198,14 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.progressBar1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1011, 606);
+            this.panel1.Size = new System.Drawing.Size(999, 683);
             this.panel1.TabIndex = 41;
             this.panel1.Visible = false;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(343, 197);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(266, 25);
-            this.progressBar1.TabIndex = 42;
             // 
             // timer1
             // 
@@ -217,13 +216,97 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(51, 565);
+            this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Lime;
+            this.label5.Location = new System.Drawing.Point(144, 37);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 31);
+            this.label5.Size = new System.Drawing.Size(131, 22);
             this.label5.TabIndex = 42;
-            this.label5.Text = "Curso:";
-            this.label5.Visible = false;
+            this.label5.Text = "CONFIRMAR ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label6.Location = new System.Drawing.Point(144, 68);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 22);
+            this.label6.TabIndex = 43;
+            this.label6.Text = "CORRIGE";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Location = new System.Drawing.Point(0, 564);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(999, 118);
+            this.groupBox1.TabIndex = 44;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(44, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(93, 16);
+            this.label7.TabIndex = 44;
+            this.label7.Text = "Aperte a tecla:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(267, 37);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(132, 22);
+            this.label8.TabIndex = 45;
+            this.label8.Text = "para proceguir";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(242, 68);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(194, 22);
+            this.label9.TabIndex = 46;
+            this.label9.Text = "para reiniciar seu voto";
+            // 
+            // lblNulo1
+            // 
+            this.lblNulo1.AutoSize = true;
+            this.lblNulo1.BackColor = System.Drawing.Color.White;
+            this.lblNulo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNulo1.Location = new System.Drawing.Point(239, 422);
+            this.lblNulo1.Name = "lblNulo1";
+            this.lblNulo1.Size = new System.Drawing.Size(328, 39);
+            this.lblNulo1.TabIndex = 45;
+            this.lblNulo1.Text = "NUMERO ERRADO";
+            this.lblNulo1.Visible = false;
+            // 
+            // lblNulo2
+            // 
+            this.lblNulo2.AutoSize = true;
+            this.lblNulo2.BackColor = System.Drawing.Color.White;
+            this.lblNulo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNulo2.Location = new System.Drawing.Point(239, 480);
+            this.lblNulo2.Name = "lblNulo2";
+            this.lblNulo2.Size = new System.Drawing.Size(220, 39);
+            this.lblNulo2.TabIndex = 46;
+            this.lblNulo2.Text = "VOTO NULO";
+            this.lblNulo2.Visible = false;
             // 
             // frmUrna
             // 
@@ -231,9 +314,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.telaurnagodagod;
-            this.ClientSize = new System.Drawing.Size(1011, 606);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(999, 683);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCurso);
@@ -244,6 +328,9 @@
             this.Controls.Add(this.txt1);
             this.Controls.Add(this.lblCurso2);
             this.Controls.Add(this.lblNome2);
+            this.Controls.Add(this.lblNulo1);
+            this.Controls.Add(this.lblNulo2);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -254,6 +341,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,8 +362,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblNulo1;
+        private System.Windows.Forms.Label lblNulo2;
     }
 }
