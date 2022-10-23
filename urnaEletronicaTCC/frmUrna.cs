@@ -116,6 +116,8 @@ namespace urnaEletronicaTCC
             pbFoto.Image = null;
             numeros = null;
             groupBox1.Visible = false;
+            lblNulo1.Visible = false;
+            lblNulo2.Visible = false;
 
         }
 
