@@ -16,7 +16,7 @@ namespace urnaEletronicaTCC
 {
     public partial class frmCadastro : Form
     {
-     
+        public string destino;
         public frmCadastro()
         {
             InitializeComponent();
@@ -31,10 +31,8 @@ namespace urnaEletronicaTCC
             dialog.Title = "Selecione uma Imagem";
             if (dialog.ShowDialog() == DialogResult.OK) 
             {
-                string foto = dialog.FileName.ToString();
-                txtImage.Text = foto;
-                pbFoto.ImageLocation = foto;
-
+                Bitmap bitmap = new Bitmap(dialog.FileName);
+                pbFoto.Image.Save(Application.StartupPath.ToString() + "\\images\\");
             }
           
         }

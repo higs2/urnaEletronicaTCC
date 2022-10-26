@@ -270,6 +270,7 @@ namespace urnaEletronicaTCC
                         timer1.Interval = 10000;
                         timer1.Enabled = true;
                         timer1.Start();
+                        txt1.Focus();
                         limpar();
                     }
                     
