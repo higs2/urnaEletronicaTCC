@@ -31,8 +31,16 @@ namespace urnaEletronicaTCC
             dialog.Title = "Selecione uma Imagem";
             if (dialog.ShowDialog() == DialogResult.OK) 
             {
-                Bitmap bitmap = new Bitmap(dialog.FileName);
-                pbFoto.Image.Save(Application.StartupPath.ToString() + "\\images\\");
+                /*
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\image");
+                pbFoto.Text = Convert.ToString(new System.Drawing.Bitmap(dialog.FileName));
+                destino = "\\image\\" + dialog.SafeFileName;
+                File.Copy(dialog.FileName, Directory.GetCurrentDirectory() + destino);
+                */
+
+                string foto = dialog.FileName.ToString();
+                txtImage.Text = foto;
+                pbFoto.ImageLocation = foto;
             }
           
         }
