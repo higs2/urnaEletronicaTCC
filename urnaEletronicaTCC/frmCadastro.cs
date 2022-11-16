@@ -34,9 +34,11 @@ namespace urnaEletronicaTCC
                 Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\image");
                 pbFoto.Image = new System.Drawing.Bitmap(dialog.FileName);
                 destino = "\\image\\" + dialog.SafeFileName;
-
+                File.Copy(dialog.FileName, Directory.GetCurrentDirectory() + destino);
                 btnEscolherFoto.Enabled = false;
                 btnLimpar.Enabled = true;
+
+
                 /*
                 string foto = dialog.FileName.ToString();
                 txtImage.Text = foto;

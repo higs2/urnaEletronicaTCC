@@ -65,7 +65,6 @@
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(60, 47);
             this.txt1.TabIndex = 0;
-            this.txt1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt1_KeyDown);
             this.txt1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt1_KeyPress);
             this.txt1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt1_KeyUp);
             // 
@@ -78,7 +77,6 @@
             this.txt2.Size = new System.Drawing.Size(60, 47);
             this.txt2.TabIndex = 1;
             this.txt2.TextChanged += new System.EventHandler(this.txt2_TextChanged);
-            this.txt2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt2_KeyDown);
             this.txt2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt2_KeyPress);
             this.txt2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt2_KeyUp);
             // 
@@ -94,13 +92,12 @@
             // 
             // txtFoto
             // 
-            this.txtFoto.Enabled = false;
             this.txtFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFoto.Location = new System.Drawing.Point(320, 211);
+            this.txtFoto.Location = new System.Drawing.Point(320, 246);
             this.txtFoto.Name = "txtFoto";
-            this.txtFoto.Size = new System.Drawing.Size(116, 31);
+            this.txtFoto.Size = new System.Drawing.Size(215, 31);
             this.txtFoto.TabIndex = 33;
-            this.txtFoto.Visible = false;
+            this.txtFoto.TextChanged += new System.EventHandler(this.txtFoto_TextChanged);
             // 
             // lblNome
             // 
@@ -159,7 +156,6 @@
             this.lblNome2.TabIndex = 38;
             this.lblNome2.Text = "Nome:";
             this.lblNome2.Visible = false;
-            this.lblNome2.Click += new System.EventHandler(this.lblNome2_Click);
             // 
             // lblCurso2
             // 
@@ -172,14 +168,13 @@
             this.lblCurso2.TabIndex = 39;
             this.lblCurso2.Text = "Curso:";
             this.lblCurso2.Visible = false;
-            this.lblCurso2.Click += new System.EventHandler(this.lblCurso2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(283, 171);
+            this.label3.Location = new System.Drawing.Point(146, 34);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(263, 135);
             this.label3.TabIndex = 40;
@@ -200,9 +195,9 @@
             // 
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(27, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(102, 80);
+            this.panel1.Size = new System.Drawing.Size(448, 207);
             this.panel1.TabIndex = 41;
             this.panel1.Visible = false;
             // 
@@ -336,7 +331,6 @@
             this.Name = "frmUrna";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmUrna_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmUrna_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

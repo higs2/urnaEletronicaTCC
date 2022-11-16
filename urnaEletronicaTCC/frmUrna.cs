@@ -27,9 +27,6 @@ namespace urnaEletronicaTCC
 
     public partial class frmUrna : Form
     {
-        Boolean keyCancel = false;
-
-        
 
        
         public frmUrna()
@@ -46,7 +43,7 @@ namespace urnaEletronicaTCC
             txt1.Focus();
         }
 
-
+        public string destino;
         private void txt2_TextChanged(object sender, EventArgs e)
         {
             try
@@ -83,10 +80,14 @@ namespace urnaEletronicaTCC
                     dataRow = dt.Rows[cont];
                     lblNome.Text = dataRow["nome"].ToString();
                     lblCurso.Text = dataRow["curso"].ToString();
-                    pbFoto.Image = Image.FromFile(dataRow["foto"].ToString());
-
+                    // pbFoto.Image = Image.FromFile(dataRow["foto"].ToString());
+                    destino = dataRow["foto"].ToString();
                     cont++;
                             
+                    if (destino != null)
+                    {
+                        pbFoto.Image = new System.Drawing.Bitmap(Directory.GetCurrentDirectory() + destino);
+                    }
                 }
 
 
@@ -147,7 +148,7 @@ namespace urnaEletronicaTCC
                     //frmFim fim = new frmFim();
                     //fim.ShowDialog();
                     panel1.Visible = true;
-                    //timer1.Interval = 2000;
+                    timer1.Interval = 2000;
                     
 
                 }
@@ -170,43 +171,6 @@ namespace urnaEletronicaTCC
 
             timer1.Stop();
             timer1.Enabled = false;
-        }
-
-        private void btnBranco_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt1_KeyDown(object sender, KeyEventArgs e)
-        {
-                       
-        }
-
-        private void frmUrna_KeyPress(object sender, KeyPressEventArgs e)
-        {
-         
-
-            
-        }
-
-        private void frmUrna_KeyDown(object sender, KeyEventArgs e)
-        {
-            
-        }
-
-        private void txt2_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
-
-        private void lblNome2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCurso2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void txt1_KeyPress(object sender, KeyPressEventArgs e)
@@ -267,7 +231,7 @@ namespace urnaEletronicaTCC
                         s.Play();
 
                         timer1.Tick += new EventHandler(AcaoFinal);
-                        timer1.Interval = 10000;
+                        timer1.Interval = 5000;
                         timer1.Enabled = true;
                         timer1.Start();
                         txt1.Focus();
@@ -304,6 +268,11 @@ namespace urnaEletronicaTCC
                 txt2.Focus();
             }
 
+
+        }
+
+        private void txtFoto_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
