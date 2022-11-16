@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,28 +22,39 @@ namespace urnaEletronicaTCC
         {
             InitializeComponent();
         }
+        private OpenFileDialog dialog = new OpenFileDialog();
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "(*.jpeg;*.jpg;*.png;*.webp)|*.jpeg;*.jpg;*.png;*.webp";    
 
-            //dialog.Filter = "JPG Files(*.jpg)| *.jpg | PNG Files(*.png)| *.png | AllFiles(*.*)| *.*";
-            dialog.Filter = "(*.jpg;*.bmp;*.jpeg;*png;*.*)|*.jpg;*.bmp;*.jpeg;*png;*.*";
-            dialog.Title = "Selecione uma Imagem";
+
             if (dialog.ShowDialog() == DialogResult.OK) 
             {
-                /*
                 Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\image");
-                pbFoto.Text = Convert.ToString(new System.Drawing.Bitmap(dialog.FileName));
+                pbFoto.Image = new System.Drawing.Bitmap(dialog.FileName);
                 destino = "\\image\\" + dialog.SafeFileName;
-                File.Copy(dialog.FileName, Directory.GetCurrentDirectory() + destino);
-                */
 
+                btnEscolherFoto.Enabled = false;
+                btnLimpar.Enabled = true;
+                /*
                 string foto = dialog.FileName.ToString();
                 txtImage.Text = foto;
                 pbFoto.ImageLocation = foto;
+                */
             }
           
+        }
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+
+            pbFoto.Image.Dispose();
+            string foto = Directory.GetCurrentDirectory() + destino;
+            File.Delete(foto);
+            pbFoto.Image = null;
+            dialog.FileName = null;
+            destino = null;
+            
         }
 
         private void frmCadastro_Load(object sender, EventArgs e)
@@ -64,7 +76,7 @@ namespace urnaEletronicaTCC
                 txtNome.Text,
                 txtNumero.Text,
                 txtCurso.Text,
-                txtImage.Text
+                destino
                 
                 
             );
@@ -72,6 +84,7 @@ namespace urnaEletronicaTCC
 
             CadastroController cadastroController = new CadastroController();
             
+
             bool verifica  = cadastroController.salvarCadastro(save);
            
             
@@ -117,5 +130,6 @@ namespace urnaEletronicaTCC
                 MessageBox.Show("este campo aceita somente numeros positivos");
             }
         }
+
     }
 }

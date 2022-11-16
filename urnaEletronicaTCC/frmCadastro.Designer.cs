@@ -35,10 +35,9 @@
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.txtImage = new System.Windows.Forms.TextBox();
             this.btnEscolherFoto = new System.Windows.Forms.Button();
             this.pbFoto = new System.Windows.Forms.PictureBox();
-            this.txtVotos = new System.Windows.Forms.TextBox();
+            this.btnLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,16 +100,7 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // txtImage
-            // 
-            this.txtImage.Enabled = false;
-            this.txtImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImage.Location = new System.Drawing.Point(513, 281);
-            this.txtImage.Name = "txtImage";
-            this.txtImage.Size = new System.Drawing.Size(103, 29);
-            this.txtImage.TabIndex = 12;
-            this.txtImage.Visible = false;
+            this.openFileDialog1.Filter = "(*.jpeg;*.jpg;*.png;*.webp)|*.jpeg;*.jpg;*.png;*.webp";
             // 
             // btnEscolherFoto
             // 
@@ -119,31 +109,36 @@
             this.btnEscolherFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEscolherFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEscolherFoto.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnEscolherFoto.Location = new System.Drawing.Point(656, 407);
+            this.btnEscolherFoto.Location = new System.Drawing.Point(572, 527);
             this.btnEscolherFoto.Name = "btnEscolherFoto";
-            this.btnEscolherFoto.Size = new System.Drawing.Size(195, 51);
+            this.btnEscolherFoto.Size = new System.Drawing.Size(136, 51);
             this.btnEscolherFoto.TabIndex = 3;
             this.btnEscolherFoto.UseVisualStyleBackColor = false;
             this.btnEscolherFoto.Click += new System.EventHandler(this.button1_Click);
             // 
             // pbFoto
             // 
-            this.pbFoto.Location = new System.Drawing.Point(656, 235);
+            this.pbFoto.Location = new System.Drawing.Point(572, 280);
             this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(195, 166);
+            this.pbFoto.Size = new System.Drawing.Size(279, 241);
             this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFoto.TabIndex = 11;
             this.pbFoto.TabStop = false;
             // 
-            // txtVotos
+            // btnLimpar
             // 
-            this.txtVotos.Enabled = false;
-            this.txtVotos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVotos.Location = new System.Drawing.Point(513, 329);
-            this.txtVotos.Name = "txtVotos";
-            this.txtVotos.Size = new System.Drawing.Size(103, 29);
-            this.txtVotos.TabIndex = 13;
-            this.txtVotos.Visible = false;
+            this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnLimpar.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.FOTOESCOLHA;
+            this.btnLimpar.Enabled = false;
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLimpar.Location = new System.Drawing.Point(714, 527);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(136, 51);
+            this.btnLimpar.TabIndex = 14;
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // frmCadastro
             // 
@@ -151,8 +146,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.tela2;
             this.ClientSize = new System.Drawing.Size(883, 604);
-            this.Controls.Add(this.txtVotos);
-            this.Controls.Add(this.txtImage);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.pbFoto);
             this.Controls.Add(this.btnEscolherFoto);
             this.Controls.Add(this.btnCancelar);
@@ -179,10 +173,9 @@
         private System.Windows.Forms.TextBox txtCurso;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.TextBox txtImage;
         private System.Windows.Forms.Button btnEscolherFoto;
         private System.Windows.Forms.PictureBox pbFoto;
-        private System.Windows.Forms.TextBox txtVotos;
+        private System.Windows.Forms.Button btnLimpar;
+        public System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

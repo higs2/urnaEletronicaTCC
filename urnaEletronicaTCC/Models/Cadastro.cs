@@ -8,7 +8,7 @@ namespace urnaEletronicaTCC.Models
 {
     public class Cadastro
     {
-        public int id_user { get; set; }
+        public int idUser { get; set; }
         public string nome { get; set; }
         public string numero { get; set; }
         public string curso { get; set; }
