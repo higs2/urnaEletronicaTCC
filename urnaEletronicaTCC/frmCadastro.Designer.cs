@@ -111,7 +111,7 @@
             this.btnEscolherFoto.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnEscolherFoto.Location = new System.Drawing.Point(572, 527);
             this.btnEscolherFoto.Name = "btnEscolherFoto";
-            this.btnEscolherFoto.Size = new System.Drawing.Size(136, 51);
+            this.btnEscolherFoto.Size = new System.Drawing.Size(136, 65);
             this.btnEscolherFoto.TabIndex = 3;
             this.btnEscolherFoto.UseVisualStyleBackColor = false;
             this.btnEscolherFoto.Click += new System.EventHandler(this.button1_Click);
@@ -128,15 +128,15 @@
             // btnLimpar
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnLimpar.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.FOTOESCOLHA;
             this.btnLimpar.Enabled = false;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnLimpar.Location = new System.Drawing.Point(714, 527);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(136, 51);
+            this.btnLimpar.Size = new System.Drawing.Size(137, 65);
             this.btnLimpar.TabIndex = 14;
+            this.btnLimpar.Text = "Remover foto";
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 

@@ -85,7 +85,7 @@
             this.pbFoto.BackColor = System.Drawing.Color.White;
             this.pbFoto.Location = new System.Drawing.Point(828, 229);
             this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(395, 290);
+            this.pbFoto.Size = new System.Drawing.Size(510, 290);
             this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFoto.TabIndex = 28;
             this.pbFoto.TabStop = false;
@@ -174,7 +174,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(146, 34);
+            this.label3.Location = new System.Drawing.Point(162, 71);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(263, 135);
             this.label3.TabIndex = 40;
@@ -195,9 +195,9 @@
             // 
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(27, 12);
+            this.panel1.Location = new System.Drawing.Point(57, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(448, 207);
+            this.panel1.Size = new System.Drawing.Size(605, 310);
             this.panel1.TabIndex = 41;
             this.panel1.Visible = false;
             // 
@@ -238,9 +238,9 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(0, 522);
+            this.groupBox1.Location = new System.Drawing.Point(0, 525);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1338, 126);
+            this.groupBox1.Size = new System.Drawing.Size(1338, 123);
             this.groupBox1.TabIndex = 44;
             this.groupBox1.TabStop = false;
             this.groupBox1.Visible = false;
