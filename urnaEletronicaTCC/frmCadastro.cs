@@ -75,6 +75,7 @@ namespace urnaEletronicaTCC
         {
             Cadastro save = new Cadastro
             (
+                
                 txtNome.Text,
                 txtNumero.Text,
                 txtCurso.Text,

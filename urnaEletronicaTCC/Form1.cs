@@ -72,5 +72,11 @@ namespace urnaEletronicaTCC
         {
 
         }
+
+        private void frmPesquisar_Click(object sender, EventArgs e)
+        {
+            frmGestao gestao = new frmGestao();
+            gestao.ShowDialog();
+        }
     }
 }

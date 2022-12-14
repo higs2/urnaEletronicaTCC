@@ -91,6 +91,7 @@
   <ItemGroup>
     <Compile Include="Conexao.cs" />
     <Compile Include="Controllers\CadastroController.cs" />
+    <Compile Include="Controllers\GestaoController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,11 +110,11 @@
     <Compile Include="frmCadastro.Designer.cs">
       <DependentUpon>frmCadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmFim.cs">
+    <Compile Include="frmGestao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFim.Designer.cs">
-      <DependentUpon>frmFim.cs</DependentUpon>
+    <Compile Include="frmGestao.Designer.cs">
+      <DependentUpon>frmGestao.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUrna.cs">
       <SubType>Form</SubType>
@@ -122,6 +123,7 @@
       <DependentUpon>frmUrna.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Cadastro.cs" />
+    <Compile Include="Models\Gestao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -133,8 +135,8 @@
     <EmbeddedResource Include="frmCadastro.resx">
       <DependentUpon>frmCadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFim.resx">
-      <DependentUpon>frmFim.cs</DependentUpon>
+    <EmbeddedResource Include="frmGestao.resx">
+      <DependentUpon>frmGestao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUrna.resx">
       <DependentUpon>frmUrna.cs</DependentUpon>

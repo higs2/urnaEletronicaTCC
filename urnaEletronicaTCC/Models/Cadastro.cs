@@ -20,6 +20,7 @@ namespace urnaEletronicaTCC.Models
 
         public Cadastro
             (
+           
             string _nome,
             string _numero,
             string _curso,
@@ -27,6 +28,7 @@ namespace urnaEletronicaTCC.Models
 
             )
         {
+           
             nome = _nome;
             numero = _numero;
             curso = _curso;

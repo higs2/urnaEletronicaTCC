@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using urnaEletronicaTCC.Models;
 
 namespace urnaEletronicaTCC.Controllers
@@ -42,9 +43,11 @@ namespace urnaEletronicaTCC.Controllers
                 return true;
 
             }
-            catch (Exception)
+            catch (MySqlException)
             {
+                MessageBox.Show("Número já existe");
                 return false;
+
              
             }
             finally
@@ -108,6 +111,7 @@ namespace urnaEletronicaTCC.Controllers
             }
 
         }
+
 
         public DataTable confirmarVoto(Cadastro voto)
         {

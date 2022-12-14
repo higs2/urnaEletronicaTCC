@@ -259,7 +259,6 @@ C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\u
 C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmPrincipal.resources
 C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmApuracao.resources
 C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmCadastro.resources
-C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmFim.resources
 C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmUrna.resources
 C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.Properties.Resources.resources
 C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.csproj.GenerateResource.cache
@@ -267,3 +266,4 @@ C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\u
 C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.csproj.CopyComplete
 C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.exe
 C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.pdb
+C:\Users\higor\OneDrive\Documentos\Área de Trabalho\urnaTCC\urnaEletronicaTCC\urnaEletronicaTCC\obj\Debug\urnaEletronicaTCC.frmGestao.resources

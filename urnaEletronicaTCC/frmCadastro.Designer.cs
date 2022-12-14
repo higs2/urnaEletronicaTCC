@@ -158,7 +158,7 @@
             this.MaximizeBox = false;
             this.Name = "frmCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro";
+            this.Text = "Cadastro - Urna Eletrônica";
             this.Load += new System.EventHandler(this.frmCadastro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.ResumeLayout(false);

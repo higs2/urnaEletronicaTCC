@@ -97,6 +97,7 @@
             this.txtFoto.Name = "txtFoto";
             this.txtFoto.Size = new System.Drawing.Size(215, 31);
             this.txtFoto.TabIndex = 33;
+            this.txtFoto.Visible = false;
             this.txtFoto.TextChanged += new System.EventHandler(this.txtFoto_TextChanged);
             // 
             // lblNome
@@ -197,7 +198,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(57, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(605, 310);
+            this.panel1.Size = new System.Drawing.Size(478, 231);
             this.panel1.TabIndex = 41;
             this.panel1.Visible = false;
             // 
@@ -261,7 +262,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(408, 47);
+            this.label8.Location = new System.Drawing.Point(417, 46);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(202, 31);
             this.label8.TabIndex = 45;
