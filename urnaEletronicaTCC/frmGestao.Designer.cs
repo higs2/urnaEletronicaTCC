@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestao));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txtFoto = new System.Windows.Forms.TextBox();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
@@ -233,6 +234,7 @@
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtPesquisar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmGestao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
