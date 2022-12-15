@@ -351,5 +351,11 @@
   <ItemGroup>
     <None Include="Resources\TELAAA.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESCOLHER FOTO1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REMOVERFOTO1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

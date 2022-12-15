@@ -373,6 +373,16 @@ namespace urnaEletronicaTCC.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ESCOLHER_FOTO1 {
+            get {
+                object obj = ResourceManager.GetObject("ESCOLHER FOTO1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ferramentas_quimicas {
             get {
                 object obj = ResourceManager.GetObject("ferramentas_quimicas", resourceCulture);
@@ -566,6 +576,16 @@ namespace urnaEletronicaTCC.Properties {
         internal static System.Drawing.Bitmap REMOVERFOTO {
             get {
                 object obj = ResourceManager.GetObject("REMOVERFOTO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap REMOVERFOTO1 {
+            get {
+                object obj = ResourceManager.GetObject("REMOVERFOTO1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
