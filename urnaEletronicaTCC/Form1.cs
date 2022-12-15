@@ -43,7 +43,7 @@ namespace urnaEletronicaTCC
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-           
+            
 
         }
 
@@ -77,6 +77,17 @@ namespace urnaEletronicaTCC
         {
             frmGestao gestao = new frmGestao();
             gestao.ShowDialog();
+        }
+
+        private void toolStripStatusLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
+            lblData.Text = DateTime.Now.ToString("D");
         }
     }
 }

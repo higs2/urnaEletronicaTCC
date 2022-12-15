@@ -32,23 +32,19 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txtFoto = new System.Windows.Forms.TextBox();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
-            this.pbFoto = new System.Windows.Forms.PictureBox();
-            this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.lblNome2 = new System.Windows.Forms.Label();
-            this.lblCurso2 = new System.Windows.Forms.Label();
             this.txtCurso = new System.Windows.Forms.TextBox();
             this.txtNumero = new System.Windows.Forms.TextBox();
-            this.lblNumero = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnEscolherFoto = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pbFoto = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -59,7 +55,7 @@
             // txtFoto
             // 
             this.txtFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFoto.Location = new System.Drawing.Point(591, 13);
+            this.txtFoto.Location = new System.Drawing.Point(617, 125);
             this.txtFoto.Name = "txtFoto";
             this.txtFoto.Size = new System.Drawing.Size(182, 31);
             this.txtFoto.TabIndex = 50;
@@ -67,106 +63,63 @@
             // 
             // txtPesquisar
             // 
-            this.txtPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisar.Location = new System.Drawing.Point(707, 498);
+            this.txtPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesquisar.Location = new System.Drawing.Point(695, 516);
             this.txtPesquisar.MaxLength = 5;
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(128, 38);
+            this.txtPesquisar.Size = new System.Drawing.Size(100, 29);
             this.txtPesquisar.TabIndex = 48;
             this.txtPesquisar.TextChanged += new System.EventHandler(this.txt2_TextChanged);
             // 
-            // pbFoto
-            // 
-            this.pbFoto.BackColor = System.Drawing.Color.White;
-            this.pbFoto.Location = new System.Drawing.Point(591, 50);
-            this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(279, 244);
-            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbFoto.TabIndex = 49;
-            this.pbFoto.TabStop = false;
-            // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnPesquisar.Location = new System.Drawing.Point(841, 485);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(116, 60);
-            this.btnPesquisar.TabIndex = 61;
-            this.btnPesquisar.Text = "Pesquisar";
-            this.btnPesquisar.UseVisualStyleBackColor = false;
-            this.btnPesquisar.Click += new System.EventHandler(this.frmPesquisar_Click);
-            // 
             // txtNome
             // 
-            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(247, 115);
+            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(194, 321);
             this.txtNome.MaxLength = 20;
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(190, 38);
+            this.txtNome.Size = new System.Drawing.Size(279, 29);
             this.txtNome.TabIndex = 62;
-            // 
-            // lblNome2
-            // 
-            this.lblNome2.AutoSize = true;
-            this.lblNome2.BackColor = System.Drawing.Color.White;
-            this.lblNome2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome2.Location = new System.Drawing.Point(107, 118);
-            this.lblNome2.Name = "lblNome2";
-            this.lblNome2.Size = new System.Drawing.Size(94, 31);
-            this.lblNome2.TabIndex = 55;
-            this.lblNome2.Text = "Nome:";
-            // 
-            // lblCurso2
-            // 
-            this.lblCurso2.AutoSize = true;
-            this.lblCurso2.BackColor = System.Drawing.Color.White;
-            this.lblCurso2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurso2.Location = new System.Drawing.Point(107, 259);
-            this.lblCurso2.Name = "lblCurso2";
-            this.lblCurso2.Size = new System.Drawing.Size(95, 31);
-            this.lblCurso2.TabIndex = 56;
-            this.lblCurso2.Text = "Curso:";
             // 
             // txtCurso
             // 
-            this.txtCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurso.Location = new System.Drawing.Point(247, 256);
+            this.txtCurso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurso.Location = new System.Drawing.Point(216, 436);
             this.txtCurso.MaxLength = 20;
             this.txtCurso.Name = "txtCurso";
-            this.txtCurso.Size = new System.Drawing.Size(190, 38);
+            this.txtCurso.Size = new System.Drawing.Size(257, 29);
             this.txtCurso.TabIndex = 63;
             // 
             // txtNumero
             // 
+            this.txtNumero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNumero.Enabled = false;
-            this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero.Location = new System.Drawing.Point(247, 185);
+            this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumero.Location = new System.Drawing.Point(243, 379);
             this.txtNumero.MaxLength = 20;
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(190, 38);
+            this.txtNumero.Size = new System.Drawing.Size(230, 29);
             this.txtNumero.TabIndex = 65;
             // 
-            // lblNumero
+            // groupBox1
             // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.BackColor = System.Drawing.Color.White;
-            this.lblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumero.Location = new System.Drawing.Point(107, 188);
-            this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(118, 31);
-            this.lblNumero.TabIndex = 64;
-            this.lblNumero.Text = "Numero:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(583, 501);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 31);
-            this.label1.TabIndex = 66;
-            this.label1.Text = "Numero:";
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.txtNome);
+            this.groupBox1.Controls.Add(this.btnLimpar);
+            this.groupBox1.Controls.Add(this.txtCurso);
+            this.groupBox1.Controls.Add(this.btnEscolherFoto);
+            this.groupBox1.Controls.Add(this.txtNumero);
+            this.groupBox1.Controls.Add(this.txtFoto);
+            this.groupBox1.Controls.Add(this.pbFoto);
+            this.groupBox1.Enabled = false;
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Location = new System.Drawing.Point(-13, -24);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1083, 508);
+            this.groupBox1.TabIndex = 72;
+            this.groupBox1.TabStop = false;
             // 
             // btnLimpar
             // 
@@ -175,92 +128,108 @@
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnLimpar.Location = new System.Drawing.Point(733, 300);
+            this.btnLimpar.Image = global::urnaEletronicaTCC.Properties.Resources.REMOVERFOTO;
+            this.btnLimpar.Location = new System.Drawing.Point(759, 412);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(137, 65);
             this.btnLimpar.TabIndex = 69;
-            this.btnLimpar.Text = "Remover foto";
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnEscolherFoto
             // 
             this.btnEscolherFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnEscolherFoto.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.FOTOESCOLHA;
+            this.btnEscolherFoto.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.ESCOLHER_FOTO;
             this.btnEscolherFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEscolherFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEscolherFoto.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnEscolherFoto.Location = new System.Drawing.Point(591, 300);
+            this.btnEscolherFoto.Location = new System.Drawing.Point(617, 412);
             this.btnEscolherFoto.Name = "btnEscolherFoto";
             this.btnEscolherFoto.Size = new System.Drawing.Size(136, 65);
             this.btnEscolherFoto.TabIndex = 68;
             this.btnEscolherFoto.UseVisualStyleBackColor = false;
             this.btnEscolherFoto.Click += new System.EventHandler(this.btnEscolherFoto_Click);
             // 
-            // btnEditar
+            // pbFoto
             // 
-            this.btnEditar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnEditar.Enabled = false;
-            this.btnEditar.Location = new System.Drawing.Point(58, 485);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(116, 60);
-            this.btnEditar.TabIndex = 70;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = false;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSalvar.Enabled = false;
-            this.btnSalvar.Location = new System.Drawing.Point(204, 485);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(116, 60);
-            this.btnSalvar.TabIndex = 71;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = false;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtNome);
-            this.groupBox1.Controls.Add(this.lblNome2);
-            this.groupBox1.Controls.Add(this.lblCurso2);
-            this.groupBox1.Controls.Add(this.btnLimpar);
-            this.groupBox1.Controls.Add(this.txtCurso);
-            this.groupBox1.Controls.Add(this.btnEscolherFoto);
-            this.groupBox1.Controls.Add(this.lblNumero);
-            this.groupBox1.Controls.Add(this.txtNumero);
-            this.groupBox1.Controls.Add(this.txtFoto);
-            this.groupBox1.Controls.Add(this.pbFoto);
-            this.groupBox1.Enabled = false;
-            this.groupBox1.Location = new System.Drawing.Point(12, 80);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(959, 378);
-            this.groupBox1.TabIndex = 72;
-            this.groupBox1.TabStop = false;
+            this.pbFoto.BackColor = System.Drawing.Color.White;
+            this.pbFoto.Location = new System.Drawing.Point(617, 162);
+            this.pbFoto.Name = "pbFoto";
+            this.pbFoto.Size = new System.Drawing.Size(279, 244);
+            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbFoto.TabIndex = 49;
+            this.pbFoto.TabStop = false;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCancelar.Location = new System.Drawing.Point(359, 485);
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(354, 502);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(116, 60);
+            this.btnCancelar.Size = new System.Drawing.Size(106, 47);
             this.btnCancelar.TabIndex = 73;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.BackColor = System.Drawing.Color.Green;
+            this.btnSalvar.Enabled = false;
+            this.btnSalvar.FlatAppearance.BorderSize = 0;
+            this.btnSalvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(203, 502);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(106, 47);
+            this.btnSalvar.TabIndex = 71;
+            this.btnSalvar.Text = "SALVAR";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.Yellow;
+            this.btnEditar.Enabled = false;
+            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(53, 502);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(106, 47);
+            this.btnEditar.TabIndex = 70;
+            this.btnEditar.Text = "EDITAR";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPesquisar.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.botaoPESQUISAR;
+            this.btnPesquisar.FlatAppearance.BorderSize = 0;
+            this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisar.Location = new System.Drawing.Point(840, 502);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(106, 47);
+            this.btnPesquisar.TabIndex = 61;
+            this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.frmPesquisar_Click);
             // 
             // frmGestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(983, 577);
+            this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.TELAAA;
+            this.ClientSize = new System.Drawing.Size(984, 573);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtPesquisar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -269,9 +238,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestão - Urna Eletrônica";
             this.Load += new System.EventHandler(this.frmGestao_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,11 +254,8 @@
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblNome2;
-        private System.Windows.Forms.Label lblCurso2;
         private System.Windows.Forms.TextBox txtCurso;
         private System.Windows.Forms.TextBox txtNumero;
-        private System.Windows.Forms.Label lblNumero;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnEscolherFoto;
         private System.Windows.Forms.Button btnEditar;

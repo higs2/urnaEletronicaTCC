@@ -118,154 +118,187 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="botao cadastrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botao cadastrar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fundo urna god" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fundo urna god.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FOTOESCOLHA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FOTOESCOLHA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tela5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tela5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="tendencias-de-ti-que-voce-deve-ficar-de-olho" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tendencias-de-ti-que-voce-deve-ficar-de-olho.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CADASTRO CAND" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CADASTRO CAND.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="APURACAO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\APURACAO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fundo urna" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fundo urna.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="botao cadastrar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botao cadastrar1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo Mercurio Eleitoral" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo Mercurio Eleitoral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tela3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tela3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BOTAO CANCELAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BOTAO CANCELAR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="VOTACAO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VOTACAO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tela2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tela2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo Mercurio Eleitoral1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo Mercurio Eleitoral1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CADASTRAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CADASTRAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="telaurnagodagod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\telaurnagodagod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="urna" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\audio\urna.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="anti_mofo_preventivo_allchem_900ml" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\anti-mofo-preventivo-allchem-900ml.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Artificial_intelligence_amico_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\Artificial-intelligence-amico-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\bg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cinema_CRED_iStock_Roman_Valiev" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\cinema-CRED-iStock_Roman-Valiev.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="curaplantasbanner" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\curaplantasbanner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="da" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\da.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_960x720_11_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\960x720-11-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="daf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\images\daf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="densidade_o_que_e_como_e_formada_forma_de_calcular_e_medidas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\densidade-o-que-e-como-e-formada-forma-de-calcular-e-medidas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="botaoSALVAR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botaoSALVAR1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dia_mundial_da_saude_mental" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\dia-mundial-da-saude-mental.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cinema_CRED_iStock_Roman_Valiev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\cinema-CRED-iStock_Roman-Valiev.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="download1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\images\download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DST_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\DST-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ferramentas_quimicas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\ferramentas-quimicas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hero_Shot_Avatars_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\Hero_Shot_Avatars_copy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hwkb17_028" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\hwkb17_028.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="i332959" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\i332959.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imagem_site_combate_ao_cancer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\imagem-site-combate-ao-cancer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="liptint_amp_card_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\liptint-amp_card-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Narcoticos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\Narcoticos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PANDEMIA_X_ENDEMIA__1024x766" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\PANDEMIA-X-ENDEMIA--1024x766.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="processos_de_despoluicao_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\processos-de-despoluicao-2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="produtora_de_sorvete_soft_psoft_500" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\produtora-de-sorvete-soft-psoft-500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Projeto_de_Energia_Solar_Residencial_Quanto_Custa_4_Erros_Comuns_752x440" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\Projeto-de-Energia-Solar-Residencial-Quanto-Custa-4-Erros-Comuns-752x440.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="queimaduras_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\queimaduras_1-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quimica_forense" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\quimica-forense.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="botao cadastrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botao cadastrar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_010180210809_riscos_interfaces_neurais_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\images\010180210809-riscos-interfaces-neurais-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_09_the_100_year_evolution_of_9_kitchen_appliances_stove_resize_md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\09-the-100-year-evolution-of-9-kitchen-appliances-stove_resize_md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_31c9668127c2b883d1d6e42ca8e73c96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\31c9668127c2b883d1d6e42ca8e73c96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_3655778" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\3655778.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logo Mercurio Eleitoral1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Mercurio Eleitoral1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_8f62cba2944bead08a1c4987ca1825b8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\images\8f62cba2944bead08a1c4987ca1825b8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_960x720_11_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\960x720-11-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="da" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\da.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ferramentas_quimicas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\ferramentas-quimicas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="APURACAO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\APURACAO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Artificial_intelligence_amico_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\Artificial-intelligence-amico-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CADASTRAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CADASTRAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="i332959" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\i332959.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hero_Shot_Avatars_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\Hero_Shot_Avatars_copy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tela2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tela2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quimica_forense" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\quimica-forense.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="botao cadastrar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botao cadastrar1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TELA GESTÃO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TELA GESTÃO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="processos_de_despoluicao_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\processos-de-despoluicao-2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="REMOVERFOTO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\REMOVERFOTO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tela3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tela3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="botaoEDITAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botaoEDITAR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_09_the_100_year_evolution_of_9_kitchen_appliances_stove_resize_md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\09-the-100-year-evolution-of-9-kitchen-appliances-stove_resize_md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="botaocancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botaocancelar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="queimaduras_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\queimaduras_1-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ESCOLHER FOTO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ESCOLHER FOTO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="botaoSALVAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botaoSALVAR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telaurnagodagod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telaurnagodagod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DST_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\DST-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="densidade_o_que_e_como_e_formada_forma_de_calcular_e_medidas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\densidade-o-que-e-como-e-formada-forma-de-calcular-e-medidas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PANDEMIA_X_ENDEMIA__1024x766" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\PANDEMIA-X-ENDEMIA--1024x766.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="botaoNOVOOOOOO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botaoNOVOOOOOO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BOTAO CANCELAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BOTAO CANCELAR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hwkb17_028" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\hwkb17_028.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="urna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\audio\urna.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo Mercurio Eleitoral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Mercurio Eleitoral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TEL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TEL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="curaplantasbanner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\curaplantasbanner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anti_mofo_preventivo_allchem_900ml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\anti-mofo-preventivo-allchem-900ml.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_31c9668127c2b883d1d6e42ca8e73c96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\31c9668127c2b883d1d6e42ca8e73c96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CADASTRO CAND" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CADASTRO CAND.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FOTOESCOLHA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FOTOESCOLHA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="botaoPESQUISAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botaoPESQUISAR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VOTACAO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VOTACAO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tela5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tela5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundo urna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundo urna.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="produtora_de_sorvete_soft_psoft_500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\produtora-de-sorvete-soft-psoft-500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3655778" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\3655778.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dia_mundial_da_saude_mental" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\dia-mundial-da-saude-mental.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\bg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Projeto_de_Energia_Solar_Residencial_Quanto_Custa_4_Erros_Comuns_752x440" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\Projeto-de-Energia-Solar-Residencial-Quanto-Custa-4-Erros-Comuns-752x440.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Narcoticos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\Narcoticos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundo urna god" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundo urna god.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagem_site_combate_ao_cancer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\imagem-site-combate-ao-cancer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="liptint_amp_card_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\images\liptint-amp_card-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TELAAA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TELAAA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

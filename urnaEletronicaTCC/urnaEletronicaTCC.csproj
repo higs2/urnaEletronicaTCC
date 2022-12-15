@@ -318,5 +318,38 @@
   <ItemGroup>
     <None Include="bin\Debug\images\quimica-forense.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botaoNOVOOOOOO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botaocancelar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botaoSALVAR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botaoEDITAR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botaoSALVAR1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botaoPESQUISAR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESCOLHER FOTO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REMOVERFOTO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TELA GESTÃO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TEL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TELAAA.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -193,6 +193,66 @@ namespace urnaEletronicaTCC.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap botaocancelar {
+            get {
+                object obj = ResourceManager.GetObject("botaocancelar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap botaoEDITAR {
+            get {
+                object obj = ResourceManager.GetObject("botaoEDITAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap botaoNOVOOOOOO {
+            get {
+                object obj = ResourceManager.GetObject("botaoNOVOOOOOO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap botaoPESQUISAR {
+            get {
+                object obj = ResourceManager.GetObject("botaoPESQUISAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap botaoSALVAR {
+            get {
+                object obj = ResourceManager.GetObject("botaoSALVAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap botaoSALVAR1 {
+            get {
+                object obj = ResourceManager.GetObject("botaoSALVAR1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CADASTRAR {
             get {
                 object obj = ResourceManager.GetObject("CADASTRAR", resourceCulture);
@@ -296,6 +356,16 @@ namespace urnaEletronicaTCC.Properties {
         internal static System.Drawing.Bitmap DST_1 {
             get {
                 object obj = ResourceManager.GetObject("DST_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ESCOLHER_FOTO {
+            get {
+                object obj = ResourceManager.GetObject("ESCOLHER FOTO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -493,6 +563,36 @@ namespace urnaEletronicaTCC.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap REMOVERFOTO {
+            get {
+                object obj = ResourceManager.GetObject("REMOVERFOTO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TEL {
+            get {
+                object obj = ResourceManager.GetObject("TEL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TELA_GESTÃO {
+            get {
+                object obj = ResourceManager.GetObject("TELA GESTÃO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tela2 {
             get {
                 object obj = ResourceManager.GetObject("tela2", resourceCulture);
@@ -516,6 +616,16 @@ namespace urnaEletronicaTCC.Properties {
         internal static System.Drawing.Bitmap tela5 {
             get {
                 object obj = ResourceManager.GetObject("tela5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TELAAA {
+            get {
+                object obj = ResourceManager.GetObject("TELAAA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
