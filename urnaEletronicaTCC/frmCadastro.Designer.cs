@@ -145,7 +145,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::urnaEletronicaTCC.Properties.Resources.tela2;
-            this.ClientSize = new System.Drawing.Size(883, 604);
+            this.ClientSize = new System.Drawing.Size(891, 604);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.pbFoto);
             this.Controls.Add(this.btnEscolherFoto);

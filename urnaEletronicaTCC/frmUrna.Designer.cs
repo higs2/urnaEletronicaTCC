@@ -175,7 +175,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(162, 71);
+            this.label3.Location = new System.Drawing.Point(541, 229);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(263, 135);
             this.label3.TabIndex = 40;
@@ -186,7 +186,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(822, 505);
+            this.label4.Location = new System.Drawing.Point(1165, 491);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 31);
             this.label4.TabIndex = 41;
@@ -196,9 +196,10 @@
             // 
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(57, 12);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(478, 231);
+            this.panel1.Size = new System.Drawing.Size(1363, 647);
             this.panel1.TabIndex = 41;
             this.panel1.Visible = false;
             // 

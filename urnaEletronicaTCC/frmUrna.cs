@@ -66,7 +66,7 @@ namespace urnaEletronicaTCC
                 lblCurso.Visible = true;
                 groupBox1.Visible = true;
 
-                if (Convert.ToInt32(txt1.Text + txt2.Text) >= 35)
+                if (Convert.ToInt32(txt1.Text + txt2.Text) >= 100)
                 {
                     lblNulo1.Visible = true;
                     lblNulo2.Visible = true;
@@ -75,6 +75,7 @@ namespace urnaEletronicaTCC
                     lblNome2.Visible = false;
                     lblCurso2.Visible = false;
                 }
+
                 while (cont <= dt.Rows.Count)
                 {
 
